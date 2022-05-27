@@ -8,7 +8,7 @@ const Home = () => {
     <>
       <div>
         <Header />
-
+        {/*  ====================== Hero Section =============================  */}
         <section className="hero-section relative hero-shape pt-40 pb-24 lg:pt-64 lg:pb-56">
           <div className="container mx-auto relative px-4 z-10">
             <div className="max-w-3xl mx-auto text-center">
@@ -36,7 +36,7 @@ const Home = () => {
             </div>
           </div>
         </section>
-
+        {/*  ====================== Category Section =============================  */}
         <section className="category-section my-20 lg:my-32">
           <div className="container mx-auto relative px-4 z-10">
             <div className="section-title flex flex-wrap items-center justify-between mb-8 lg:mb-14">
@@ -191,7 +191,7 @@ const Home = () => {
             </div>
           </div>
         </section>
-
+        {/*  ====================== Product Section =============================  */}
         <section className="product-section my-20 lg:my-32">
           <div className="container mx-auto relative px-4 z-10">
             <div className="section-title flex flex-wrap items-center justify-between mb-8 lg:mb-14">
@@ -226,435 +226,433 @@ const Home = () => {
                       src="assets/images/product/28.jpg"
                       alt="title"
                     />
-                    <div className="product-meta leading-4 font-body font-medium countdown-time absolute bottom-4 right-4 grid grid-cols-4 gap-4 text-center bg-gradient-to-r from-purple-500 to-indigo-500 rounded p-3"></div>
-                    <div className="product-content px-6 pt-6">
-                      <div className="flex items-center justify-between">
-                        <div>
-                          <h3 className="font-display text-xl text-blueGray-900 font-bold transition hover:text-indigo-500">
-                            <Link to="/item-single">Creative Artwork</Link>
-                          </h3>
-                        </div>
-                        <div className="flex items-center">
-                          <span className="bg-indigo-100 flex items-center justify-center rounded-lg w-8 h-8">
-                            <img
-                              src="assets/images/heart-icon2.svg"
-                              alt="title"
-                            />
-                          </span>
-                          <p className="font-body font-bold text-sm text-blueGray-600 ml-2">
-                            88
-                          </p>
-                        </div>
-                      </div>
-                      <div className="flex mb-8 mt-2">
-                        <Link
-                          to="/creator-published"
-                          className="relative"
-                          data-tooltip="Steven Robart"
-                        >
-                          <img
-                            className="border-2 border-white w-10 h-10 object-cover rounded-lg"
-                            src="assets/images/author/1.jpg"
-                            alt="title"
-                          />
-                        </Link>
-                        <Link
-                          to="/creator-published"
-                          className="relative -left-4"
-                          data-tooltip="Steven Robart"
-                        >
-                          <img
-                            className="border-2 border-white w-10 h-10 object-cover rounded-lg"
-                            src="assets/images/author/3.jpg"
-                            alt="title"
-                          />
-                          <span className="absolute bottom-0 right-1">
-                            <img
-                              className="w-3 h-3"
-                              src="assets/images/verified-icon.svg"
-                              alt="title"
-                            />
-                          </span>
-                        </Link>
-                      </div>
-                    </div>
+                    <div className="product-meta leading-4 font-body font-medium countdown-time absolute bottom-4 right-4 grid grid-cols-4 gap-4 text-center bg-gradient-to-r from-purple-500 to-indigo-500 rounded p-3" />
                   </div>
-                  <div className="product-bottom flex flex-wrap justify-between px-6 pb-6">
-                    <div>
-                      <p className="font-body text-sm blueGray-600">
-                        Current Bid
-                      </p>
-                      <p className="flex items-center font-body font-bold text-blueGray-900 my-1">
-                        <img
-                          className="w-5 h-5 inline-block mr-1"
-                          src="assets/images/cryptocurrency-icon.svg"
-                          alt="title"
-                        />
-                        0.008 ETH
-                      </p>
-                      <p className="font-body text-sm text-blueGray-600">
-                        ≈$26.69
-                      </p>
+                  <div className="product-content px-6 pt-6">
+                    <div className="flex items-center justify-between">
+                      <div>
+                        <h3 className="font-display text-xl text-blueGray-900 font-bold transition hover:text-indigo-500">
+                          <Link to="/item-single">Creative Artwork</Link>
+                        </h3>
+                      </div>
+                      <div className="flex items-center">
+                        <span className="bg-indigo-100 flex items-center justify-center rounded-lg w-8 h-8">
+                          <img
+                            src="assets/images/heart-icon2.svg"
+                            alt="title"
+                          />
+                        </span>
+                        <p className="font-body font-bold text-sm text-blueGray-600 ml-2">
+                          88
+                        </p>
+                      </div>
                     </div>
-                    <div className="text-center">
+                    <div className="flex mb-8 mt-2">
                       <Link
-                        to="/item-single"
-                        className="border-gradient block bg-gradient-to-r text-indigo-500 font-body font-semibold rounded py-2 px-4 hover:text-white hover:from-indigo-500 hover:to-purple-500 mb-2 transition duration-500   "
+                        to="/creator-published"
+                        className="relative"
+                        data-tooltip="Steven Robart"
                       >
                         <img
-                          className="w-4 h-4 inline-block mb-1"
-                          src="./assets/images/bid-icon.svg"
+                          className="border-2 border-white w-10 h-10 object-cover rounded-lg"
+                          src="assets/images/author/1.jpg"
                           alt="title"
                         />
-                        Place a bid
                       </Link>
-                      <p className="font-body text-xs text-blueGray-600">
-                        12 bids total
-                      </p>
+                      <Link
+                        to="/creator-published"
+                        className="relative -left-4"
+                        data-tooltip="Steven Robart"
+                      >
+                        <img
+                          className="border-2 border-white w-10 h-10 object-cover rounded-lg"
+                          src="assets/images/author/3.jpg"
+                          alt="title"
+                        />{" "}
+                        <span className="absolute bottom-0 right-1">
+                          <img
+                            className="w-3 h-3"
+                            src="assets/images/verified-icon.svg"
+                            alt="title"
+                          />
+                        </span>
+                      </Link>
                     </div>
                   </div>
                 </div>
-                <div
-                  className="product-box bg-white flex justify-between flex-col rounded overflow-hidden transition duration-500 hover:shadow-lg"
-                  data-aos="fade-up"
-                >
-                  <div className="product-top">
-                    <div className="product-image relative rounded overflow-hidden">
+                <div className="product-bottom flex flex-wrap justify-between px-6 pb-6">
+                  <div>
+                    <p className="font-body text-sm blueGray-600">
+                      Current Bid
+                    </p>
+                    <p className="flex items-center font-body font-bold text-blueGray-900 my-1">
                       <img
-                        className="w-full md:h-64 object-cover"
-                        src="assets/images/product/1.gif"
+                        className="w-5 h-5 inline-block mr-1"
+                        src="assets/images/cryptocurrency-icon.svg"
                         alt="title"
-                      />
-                      <div className="product-meta leading-4 font-body font-medium countdown-time2 absolute bottom-4 right-4 grid grid-cols-4 gap-4 text-center bg-gradient-to-r from-purple-500 to-indigo-500 rounded p-3"></div>
-                      <div className="product-content px-6 pt-6">
-                        <div className="flex items-center justify-between">
-                          <h3 className="font-display text-xl text-blueGray-900 font-bold transition hover:text-indigo-500">
-                            <Link to="/item-single">Pumpkin Month</Link>
-                          </h3>
-                          <div className="flex items-center">
-                            <span className="bg-indigo-100 flex items-center justify-center rounded-lg w-8 h-8">
-                              <img
-                                src="assets/images/heart-icon2.svg"
-                                alt="title"
-                              />
-                            </span>
-                            <p className="font-body font-bold text-sm text-blueGray-600 ml-2">
-                              10
-                            </p>
-                          </div>
-                        </div>
-                        <div className="flex mb-8 mt-2">
-                          <Link
-                            to="/creator-published"
-                            className="relative"
-                            data-tooltip="Steven Robart"
-                          >
-                            <img
-                              className="border-2 border-white w-10 h-10 object-cover rounded-lg"
-                              src="assets/images/author/1.jpg"
-                              alt="title"
-                            />
-                          </Link>
-                          <Link
-                            to="/creator-published"
-                            className="relative -left-4"
-                            data-tooltip="Steven Robart"
-                          >
-                            <img
-                              className="border-2 border-white w-10 h-10 object-cover rounded-lg"
-                              src="assets/images/author/3.jpg"
-                              alt="title"
-                            />
-                            <span className="absolute bottom-0 right-1">
-                              <img
-                                className="w-3 h-3"
-                                src="assets/images/verified-icon.svg"
-                                alt="title"
-                              />
-                            </span>
-                          </Link>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="product-bottom flex flex-wrap justify-between px-6 pb-6">
-                      <div>
-                        <p className="font-body text-sm text-blueGray-600">
-                          Current Bid
-                        </p>
-                        <p className="flex items-center font-body font-bold text-blueGray-900 my-1">
-                          <img
-                            className="w-5 h-5 inline-block mr-1"
-                            src="assets/images/cryptocurrency-icon.svg"
-                            alt="title"
-                          />
-                          0.000 ETH
-                        </p>
-                        <p className="font-body text-sm text-blueGray-600">
-                          ≈$0.00
-                        </p>
-                      </div>
-                      <div className="text-center">
-                        <Link
-                          to="/item-single"
-                          className="border-gradient block bg-gradient-to-r text-indigo-500 font-body font-semibold rounded py-2 px-4 hover:text-white hover:from-indigo-500 hover:to-purple-500 mb-2 transition duration-500"
-                        >
-                          <img
-                            className="w-4 h-4 inline-block mb-1"
-                            src="assets/images/bid-icon.svg"
-                            alt="title"
-                          />
-                          Place a bid
-                        </Link>
-                        <p className="font-body text-xs text-blueGray-600">
-                          0 bids
-                        </p>
-                      </div>
-                    </div>
+                      />{" "}
+                      0.008 ETH
+                    </p>
+                    <p className="font-body text-sm text-blueGray-600">
+                      ≈$26.69
+                    </p>
                   </div>
-                  <div
-                    className="product-box bg-white flex justify-between flex-col rounded overflow-hidden transition duration-500 hover:shadow-lg"
-                    data-aos="fade-up"
-                  >
-                    <div className="product-top">
-                      <div className="product-image relative rounded overflow-hidden">
+                  <div className="text-center">
+                    <Link
+                      to="/item-single"
+                      className="border-gradient block bg-gradient-to-r text-indigo-500 font-body font-semibold rounded py-2 px-4 hover:text-white hover:from-indigo-500 hover:to-purple-500 mb-2 transition duration-500   "
+                    >
+                      <img
+                        className="w-4 h-4 inline-block mb-1"
+                        src="assets/images/bid-icon.svg"
+                        alt="title"
+                      />{" "}
+                      Place a bid
+                    </Link>
+                    <p className="font-body text-xs text-blueGray-600">
+                      12 bids total
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div
+                className="product-box bg-white flex justify-between flex-col rounded overflow-hidden transition duration-500 hover:shadow-lg"
+                data-aos="fade-up"
+              >
+                <div className="product-top">
+                  <div className="product-image relative rounded overflow-hidden">
+                    <img
+                      className="w-full md:h-64 object-cover"
+                      src="assets/images/product/1.gif"
+                      alt="title"
+                    />
+                    <div className="product-meta leading-4 font-body font-medium countdown-time2 absolute bottom-4 right-4 grid grid-cols-4 gap-4 text-center bg-gradient-to-r from-purple-500 to-indigo-500 rounded p-3" />
+                  </div>
+                  <div className="product-content px-6 pt-6">
+                    <div className="flex items-center justify-between">
+                      <h3 className="font-display text-xl text-blueGray-900 font-bold transition hover:text-indigo-500">
+                        <Link to="/item-single">Pumpkin Month</Link>
+                      </h3>
+                      <div className="flex items-center">
+                        <span className="bg-indigo-100 flex items-center justify-center rounded-lg w-8 h-8">
+                          <img
+                            src="assets/images/heart-icon2.svg"
+                            alt="title"
+                          />
+                        </span>
+                        <p className="font-body font-bold text-sm text-blueGray-600 ml-2">
+                          10
+                        </p>
+                      </div>
+                    </div>
+                    <div className="flex mb-8 mt-2">
+                      <Link
+                        to="/creator-published"
+                        className="relative"
+                        data-tooltip="Steven Robart"
+                      >
                         <img
-                          className="w-full md:h-64 object-cover"
-                          src="assets/images/product/2.webp"
+                          className="border-2 border-white w-10 h-10 object-cover rounded-lg"
+                          src="assets/images/author/1.jpg"
                           alt="title"
                         />
-                        <div className="product-meta text-white leading-4 font-body font-medium countdown-time3 absolute bottom-4 right-4 grid grid-cols-4 gap-4 text-center bg-gradient-to-r from-purple-500 to-indigo-500 rounded p-3"></div>
-                        <div className="product-content px-6 pt-6">
-                          <div className="flex items-center justify-between">
-                            <div>
-                              <h3 className="font-display text-xl text-blueGray-900 font-bold transition hover:text-indigo-500">
-                                <Link to="/item-single">Pink Love</Link>
-                              </h3>
-                            </div>
-                            <div className="flex items-center">
-                              <span className="bg-indigo-100 flex items-center justify-center rounded-lg w-8 h-8">
-                                <img
-                                  src="assets/images/heart-icon2.svg"
-                                  alt="title"
-                                />
-                              </span>
-                              <p className="font-body font-bold text-sm text-blueGray-600 ml-2">
-                                17
-                              </p>
-                            </div>
-                          </div>
-                          <div className="flex mb-8 mt-2">
-                            <Link
-                              to="/creator-published"
-                              className="relative"
-                              data-tooltip="Steven Robart"
-                            >
-                              <img
-                                className="border-2 border-white w-10 h-10 object-cover rounded-lg"
-                                src="assets/images/author/1.jpg"
-                                alt="title"
-                              />
-                            </Link>
-                            <Link
-                              to="/creator-published"
-                              className="relative -left-2"
-                              data-tooltip="Steven Robart"
-                            >
-                              <img
-                                className="border-2 border-white w-10 h-10 object-cover rounded-lg"
-                                src="assets/images/author/2.jpg"
-                                alt="title"
-                              />
-                              <span className="absolute bottom-0 right-1">
-                                <img
-                                  className="w-3 h-3"
-                                  src="assets/images/verified-icon.svg"
-                                  alt="title"
-                                />
-                              </span>
-                            </Link>
-                            <Link
-                              to="/creator-published"
-                              className="relative -left-4"
-                              data-tooltip="Steven Robart"
-                            >
-                              <img
-                                className="border-2 border-white w-10 h-10 object-cover rounded-lg"
-                                src="assets/images/author/3.jpg"
-                                alt="title"
-                              />
-                              <span className="absolute bottom-0 right-1">
-                                <img
-                                  className="w-3 h-3"
-                                  src="assets/images/verified-icon.svg"
-                                  alt="title"
-                                />
-                              </span>
-                            </Link>
-                          </div>
-                        </div>
-                      </div>
-                      <div className="product-bottom flex flex-wrap justify-between px-6 pb-6">
-                        <div>
-                          <p className="font-body text-sm text-blueGray-600">
-                            Current Bid
-                          </p>
-                          <p className="flex items-center font-body font-bold text-blueGray-900 my-1">
-                            <img
-                              className="w-5 h-5 inline-block mr-1"
-                              src="assets/images/cryptocurrency-icon.svg"
-                              alt="title"
-                            />
-                            0.008 ETH
-                          </p>
-                          <p className="font-body text-sm text-blueGray-600">
-                            ≈$3.34
-                          </p>
-                        </div>
-                        <div className="text-center">
-                          <Link
-                            to="/item-single"
-                            className="border-gradient block bg-gradient-to-r text-indigo-500 font-body font-semibold rounded py-2 px-4 hover:text-white hover:from-indigo-500 hover:to-purple-500 mb-2 transition duration-500"
-                          >
-                            <img
-                              className="w-4 h-4 inline-block mb-1"
-                              src="assets/images/bid-icon.svg"
-                              alt="title"
-                            />
-                            Place a bid
-                          </Link>
-                          <p className="font-body text-xs text-blueGray-600">
-                            2 bids total
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                    <div
-                      className="product-box bg-white flex justify-between flex-col rounded overflow-hidden transition duration-500 hover:shadow-lg"
-                      data-aos="fade-up"
-                    >
-                      <div className="product-top">
-                        <div className="product-image relative rounded overflow-hidden">
+                      </Link>
+                      <Link
+                        to="/creator-published"
+                        className="relative -left-4"
+                        data-tooltip="Steven Robart"
+                      >
+                        <img
+                          className="border-2 border-white w-10 h-10 object-cover rounded-lg"
+                          src="assets/images/author/3.jpg"
+                          alt="title"
+                        />{" "}
+                        <span className="absolute bottom-0 right-1">
                           <img
-                            className="w-full md:h-64 object-cover"
-                            src="assets/images/product/3.gif"
+                            className="w-3 h-3"
+                            src="assets/images/verified-icon.svg"
                             alt="title"
                           />
-                          <div className="product-meta text-white leading-4 font-body font-medium countdown-time4 absolute bottom-4 right-4 grid grid-cols-4 gap-4 text-center bg-gradient-to-r from-purple-500 to-indigo-500 rounded p-3"></div>
-                          <div className="product-content px-6 pt-6">
-                            <div className="flex items-center justify-between">
-                              <div>
-                                <h3 className="font-display text-xl text-blueGray-900 font-bold transition hover:text-indigo-500">
-                                  <Link to="/item-single">Token Hero #20</Link>
-                                </h3>
-                              </div>
-                              <div className="flex items-center">
-                                <span className="bg-indigo-100 flex items-center justify-center rounded-lg w-8 h-8">
-                                  <img
-                                    src="assets/images/heart-icon2.svg"
-                                    alt="title"
-                                  />
-                                </span>
-                                <p className="font-body font-bold text-sm text-blueGray-600 ml-2">
-                                  78
-                                </p>
-                              </div>
-                            </div>
-                            <div className="flex mb-8 mt-2">
-                              <Link
-                                to="/creator-published"
-                                className="relative"
-                                data-tooltip="Steven Robart"
-                              >
-                                <img
-                                  className="border-2 border-white w-10 h-10 object-cover rounded-lg"
-                                  src="assets/images/author/1.jpg"
-                                  alt="title"
-                                />
-                                <span className="absolute bottom-0 right-1">
-                                  <img
-                                    className="w-3 h-3"
-                                    src="assets/images/verified-icon.svg"
-                                    alt="title"
-                                  />
-                                </span>
-                              </Link>
-                              <Link
-                                to="/creator-published"
-                                className="relative -left-2"
-                                data-tooltip="Steven Robart"
-                              >
-                                <img
-                                  className="border-2 border-white w-10 h-10 object-cover rounded-lg"
-                                  src="assets/images/author/2.jpg"
-                                  alt="title"
-                                />
-                              </Link>
-                              <Link
-                                to="/creator-published"
-                                className="relative -left-4"
-                                data-tooltip="Steven Robart"
-                              >
-                                <img
-                                  className="border-2 border-white w-10 h-10 object-cover rounded-lg"
-                                  src="assets/images/author/3.jpg"
-                                  alt="title"
-                                />
-                                <span className="absolute bottom-0 right-1">
-                                  <img
-                                    className="w-3 h-3"
-                                    src="assets/images/verified-icon.svg"
-                                    alt="title"
-                                  />
-                                </span>
-                              </Link>
-                            </div>
-                          </div>
-                        </div>
-                        <div className="product-bottom flex flex-wrap justify-between px-6 pb-6">
-                          <div>
-                            <p className="font-body text-sm text-blueGray-600">
-                              Current Bid
-                            </p>
-                            <p className="flex items-center font-body font-bold text-blueGray-900 my-1">
-                              <img
-                                className="w-5 h-5 inline-block mr-1"
-                                src="assets/images/cryptocurrency-icon.svg"
-                                alt="title"
-                              />
-                              0.005 ETH
-                            </p>
-                            <p className="font-body text-sm text-blueGray-600">
-                              ≈$16.68
-                            </p>
-                          </div>
-                          <div className="text-center">
-                            <Link
-                              to="/item-single"
-                              className="border-gradient block bg-gradient-to-r text-indigo-500 font-body font-semibold rounded py-2 px-4 hover:text-white hover:from-indigo-500 hover:to-purple-500 mb-2 transition duration-500"
-                            >
-                              <img
-                                className="w-4 h-4 inline-block mb-1"
-                                src="assets/images/bid-icon.svg"
-                                alt="title"
-                              />
-                              Place a bid
-                            </Link>
-                            <p className="font-body text-xs text-blueGray-600">
-                              14 bids total
-                            </p>
-                          </div>
-                        </div>
+                        </span>
+                      </Link>
+                    </div>
+                  </div>
+                </div>
+                <div className="product-bottom flex flex-wrap justify-between px-6 pb-6">
+                  <div>
+                    <p className="font-body text-sm text-blueGray-600">
+                      Current Bid
+                    </p>
+                    <p className="flex items-center font-body font-bold text-blueGray-900 my-1">
+                      <img
+                        className="w-5 h-5 inline-block mr-1"
+                        src="assets/images/cryptocurrency-icon.svg"
+                        alt="title"
+                      />{" "}
+                      0.000 ETH
+                    </p>
+                    <p className="font-body text-sm text-blueGray-600">
+                      ≈$0.00
+                    </p>
+                  </div>
+                  <div className="text-center">
+                    <Link
+                      to="/item-single"
+                      className="border-gradient block bg-gradient-to-r text-indigo-500 font-body font-semibold rounded py-2 px-4 hover:text-white hover:from-indigo-500 hover:to-purple-500 mb-2 transition duration-500"
+                    >
+                      <img
+                        className="w-4 h-4 inline-block mb-1"
+                        src="assets/images/bid-icon.svg"
+                        alt="title"
+                      />{" "}
+                      Place a bid
+                    </Link>
+                    <p className="font-body text-xs text-blueGray-600">
+                      0 bids
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div
+                className="product-box bg-white flex justify-between flex-col rounded overflow-hidden transition duration-500 hover:shadow-lg"
+                data-aos="fade-up"
+              >
+                <div className="product-top">
+                  <div className="product-image relative rounded overflow-hidden">
+                    <img
+                      className="w-full md:h-64 object-cover"
+                      src="assets/images/product/2.webp"
+                      alt="title"
+                    />
+                    <div className="product-meta text-white leading-4 font-body font-medium countdown-time3 absolute bottom-4 right-4 grid grid-cols-4 gap-4 text-center bg-gradient-to-r from-purple-500 to-indigo-500 rounded p-3" />
+                  </div>
+                  <div className="product-content px-6 pt-6">
+                    <div className="flex items-center justify-between">
+                      <div>
+                        <h3 className="font-display text-xl text-blueGray-900 font-bold transition hover:text-indigo-500">
+                          <Link to="/item-single">Pink Love</Link>
+                        </h3>
+                      </div>
+                      <div className="flex items-center">
+                        <span className="bg-indigo-100 flex items-center justify-center rounded-lg w-8 h-8">
+                          <img
+                            src="assets/images/heart-icon2.svg"
+                            alt="title"
+                          />
+                        </span>
+                        <p className="font-body font-bold text-sm text-blueGray-600 ml-2">
+                          17
+                        </p>
                       </div>
                     </div>
+                    <div className="flex mb-8 mt-2">
+                      <Link
+                        to="/creator-published"
+                        className="relative"
+                        data-tooltip="Steven Robart"
+                      >
+                        <img
+                          className="border-2 border-white w-10 h-10 object-cover rounded-lg"
+                          src="assets/images/author/1.jpg"
+                          alt="title"
+                        />
+                      </Link>
+                      <Link
+                        to="/creator-published"
+                        className="relative -left-2"
+                        data-tooltip="Steven Robart"
+                      >
+                        <img
+                          className="border-2 border-white w-10 h-10 object-cover rounded-lg"
+                          src="assets/images/author/2.jpg"
+                          alt="title"
+                        />{" "}
+                        <span className="absolute bottom-0 right-1">
+                          <img
+                            className="w-3 h-3"
+                            src="assets/images/verified-icon.svg"
+                            alt="title"
+                          />
+                        </span>
+                      </Link>
+                      <Link
+                        to="/creator-published"
+                        className="relative -left-4"
+                        data-tooltip="Steven Robart"
+                      >
+                        <img
+                          className="border-2 border-white w-10 h-10 object-cover rounded-lg"
+                          src="assets/images/author/3.jpg"
+                          alt="title"
+                        />{" "}
+                        <span className="absolute bottom-0 right-1">
+                          <img
+                            className="w-3 h-3"
+                            src="assets/images/verified-icon.svg"
+                            alt="title"
+                          />
+                        </span>
+                      </Link>
+                    </div>
+                  </div>
+                </div>
+                <div className="product-bottom flex flex-wrap justify-between px-6 pb-6">
+                  <div>
+                    <p className="font-body text-sm text-blueGray-600">
+                      Current Bid
+                    </p>
+                    <p className="flex items-center font-body font-bold text-blueGray-900 my-1">
+                      <img
+                        className="w-5 h-5 inline-block mr-1"
+                        src="assets/images/cryptocurrency-icon.svg"
+                        alt="title"
+                      />{" "}
+                      0.008 ETH
+                    </p>
+                    <p className="font-body text-sm text-blueGray-600">
+                      ≈$3.34
+                    </p>
+                  </div>
+                  <div className="text-center">
+                    <Link
+                      to="/item-single"
+                      className="border-gradient block bg-gradient-to-r text-indigo-500 font-body font-semibold rounded py-2 px-4 hover:text-white hover:from-indigo-500 hover:to-purple-500 mb-2 transition duration-500"
+                    >
+                      <img
+                        className="w-4 h-4 inline-block mb-1"
+                        src="assets/images/bid-icon.svg"
+                        alt="title"
+                      />{" "}
+                      Place a bid
+                    </Link>
+                    <p className="font-body text-xs text-blueGray-600">
+                      2 bids total
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div
+                className="product-box bg-white flex justify-between flex-col rounded overflow-hidden transition duration-500 hover:shadow-lg"
+                data-aos="fade-up"
+              >
+                <div className="product-top">
+                  <div className="product-image relative rounded overflow-hidden">
+                    <img
+                      className="w-full md:h-64 object-cover"
+                      src="assets/images/product/3.gif"
+                      alt="title"
+                    />
+                    <div className="product-meta text-white leading-4 font-body font-medium countdown-time4 absolute bottom-4 right-4 grid grid-cols-4 gap-4 text-center bg-gradient-to-r from-purple-500 to-indigo-500 rounded p-3" />
+                  </div>
+                  <div className="product-content px-6 pt-6">
+                    <div className="flex items-center justify-between">
+                      <div>
+                        <h3 className="font-display text-xl text-blueGray-900 font-bold transition hover:text-indigo-500">
+                          <Link to="/item-single">Token Hero #20</Link>
+                        </h3>
+                      </div>
+                      <div className="flex items-center">
+                        <span className="bg-indigo-100 flex items-center justify-center rounded-lg w-8 h-8">
+                          <img
+                            src="assets/images/heart-icon2.svg"
+                            alt="title"
+                          />
+                        </span>
+                        <p className="font-body font-bold text-sm text-blueGray-600 ml-2">
+                          78
+                        </p>
+                      </div>
+                    </div>
+                    <div className="flex mb-8 mt-2">
+                      <Link
+                        to="/creator-published"
+                        className="relative"
+                        data-tooltip="Steven Robart"
+                      >
+                        <img
+                          className="border-2 border-white w-10 h-10 object-cover rounded-lg"
+                          src="assets/images/author/1.jpg"
+                          alt="title"
+                        />{" "}
+                        <span className="absolute bottom-0 right-1">
+                          <img
+                            className="w-3 h-3"
+                            src="assets/images/verified-icon.svg"
+                            alt="title"
+                          />
+                        </span>
+                      </Link>
+                      <Link
+                        to="/creator-published"
+                        className="relative -left-2"
+                        data-tooltip="Steven Robart"
+                      >
+                        <img
+                          className="border-2 border-white w-10 h-10 object-cover rounded-lg"
+                          src="assets/images/author/2.jpg"
+                          alt="title"
+                        />
+                      </Link>
+                      <Link
+                        to="/creator-published"
+                        className="relative -left-4"
+                        data-tooltip="Steven Robart"
+                      >
+                        <img
+                          className="border-2 border-white w-10 h-10 object-cover rounded-lg"
+                          src="assets/images/author/3.jpg"
+                          alt="title"
+                        />{" "}
+                        <span className="absolute bottom-0 right-1">
+                          <img
+                            className="w-3 h-3"
+                            src="assets/images/verified-icon.svg"
+                            alt="title"
+                          />
+                        </span>
+                      </Link>
+                    </div>
+                  </div>
+                </div>
+                <div className="product-bottom flex flex-wrap justify-between px-6 pb-6">
+                  <div>
+                    <p className="font-body text-sm text-blueGray-600">
+                      Current Bid
+                    </p>
+                    <p className="flex items-center font-body font-bold text-blueGray-900 my-1">
+                      <img
+                        className="w-5 h-5 inline-block mr-1"
+                        src="assets/images/cryptocurrency-icon.svg"
+                        alt="title"
+                      />
+                      0.005 ETH
+                    </p>
+                    <p className="font-body text-sm text-blueGray-600">
+                      ≈$16.68
+                    </p>
+                  </div>
+                  <div className="text-center">
+                    <Link
+                      to="/item-single"
+                      className="border-gradient block bg-gradient-to-r text-indigo-500 font-body font-semibold rounded py-2 px-4 hover:text-white hover:from-indigo-500 hover:to-purple-500 mb-2 transition duration-500"
+                    >
+                      <img
+                        className="w-4 h-4 inline-block mb-1"
+                        src="assets/images/bid-icon.svg"
+                        alt="title"
+                      />{" "}
+                      Place a bid
+                    </Link>
+                    <p className="font-body text-xs text-blueGray-600">
+                      14 bids total
+                    </p>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </section>
-
-        {/* <p>Top Seller section</p> */}
-
+        {/*  ====================== Top Seller Section =============================  */}
         <section className="top-seller-section my-20 lg:my-32">
           <div className="container mx-auto relative px-4 z-10">
             <div className="section-title flex flex-wrap items-center justify-between mb-8 lg:mb-14">
@@ -688,8 +686,8 @@ const Home = () => {
                       className="w-4 h-4 mr-2"
                       src="assets/images/up-icon.svg"
                       alt="title"
-                    />
-                    1
+                    />{" "}
+                    1{" "}
                   </h2>
                   <div className="flex-shrink-0 relative mr-6">
                     <img
@@ -794,8 +792,8 @@ const Home = () => {
                       className="w-4 h-4 mr-2"
                       src="assets/images/up-icon.svg"
                       alt="title"
-                    />
-                    2
+                    />{" "}
+                    2{" "}
                   </h2>
                   <div className="flex-shrink-0 relative mr-6">
                     <img
@@ -900,8 +898,8 @@ const Home = () => {
                       className="w-4 h-4 mr-2"
                       src="assets/images/down-icon.svg"
                       alt="title"
-                    />
-                    3
+                    />{" "}
+                    3{" "}
                   </h2>
                   <div className="flex-shrink-0 relative mr-6">
                     <img
@@ -1006,8 +1004,8 @@ const Home = () => {
                       className="w-4 h-4 mr-2"
                       src="assets/images/up-icon.svg"
                       alt="title"
-                    />
-                    4
+                    />{" "}
+                    4{" "}
                   </h2>
                   <div className="flex-shrink-0 relative mr-6">
                     <img
@@ -1112,8 +1110,8 @@ const Home = () => {
                       className="w-4 h-4 mr-2"
                       src="assets/images/down-icon.svg"
                       alt="title"
-                    />
-                    5
+                    />{" "}
+                    5{" "}
                   </h2>
                   <div className="flex-shrink-0 relative mr-6">
                     <img
@@ -1218,8 +1216,8 @@ const Home = () => {
                       className="w-4 h-4 mr-2"
                       src="assets/images/down-icon.svg"
                       alt="title"
-                    />
-                    6
+                    />{" "}
+                    6{" "}
                   </h2>
                   <div className="flex-shrink-0 relative mr-6">
                     <img
@@ -1320,9 +1318,7 @@ const Home = () => {
             </div>
           </div>
         </section>
-
-        {/* <>Blog section</> */}
-
+        {/*  ====================== Blog Section =============================  */}
         <section className="blog-section my-20 lg:my-32">
           <div className="container mx-auto relative px-4 z-10">
             <div className="section-title flex flex-wrap items-center justify-between mb-8 lg:mb-14">
@@ -1370,7 +1366,7 @@ const Home = () => {
                           className="w-4 h-4 inline-block mr-1"
                           src="assets/images/date-icon.svg"
                           alt="title"
-                        />
+                        />{" "}
                         02 Feb 2022
                       </p>
                       <p className="flex items-center">
@@ -1378,7 +1374,7 @@ const Home = () => {
                           className="w-4 h-4 inline-block mr-1"
                           src="assets/images/comment-icon.svg"
                           alt="title"
-                        />
+                        />{" "}
                         27 Comments
                       </p>
                     </div>
@@ -1426,7 +1422,7 @@ const Home = () => {
                           className="w-4 h-4 inline-block mr-1"
                           src="assets/images/date-icon.svg"
                           alt="title"
-                        />
+                        />{" "}
                         02 Feb 2022
                       </p>
                       <p className="flex items-center">
@@ -1434,7 +1430,7 @@ const Home = () => {
                           className="w-4 h-4 inline-block mr-1"
                           src="assets/images/comment-icon.svg"
                           alt="title"
-                        />
+                        />{" "}
                         13 Comments
                       </p>
                     </div>
@@ -1481,7 +1477,7 @@ const Home = () => {
                           className="w-4 h-4 inline-block mr-1"
                           src="assets/images/date-icon.svg"
                           alt="title"
-                        />
+                        />{" "}
                         02 Feb 2022
                       </p>
                       <p className="flex items-center">
@@ -1489,7 +1485,7 @@ const Home = () => {
                           className="w-4 h-4 inline-block mr-1"
                           src="assets/images/comment-icon.svg"
                           alt="title"
-                        />
+                        />{" "}
                         17 Comments
                       </p>
                     </div>
@@ -1516,7 +1512,7 @@ const Home = () => {
             </div>
             <div className="flex justify-center mt-8 lg:mt-14">
               <button className="btn load-more-btn flex items-center text-white font-body font-bold rounded px-6 py-4 transition-all duration-500 bg-gradient-to-tl from-indigo-500 via-purple-500 to-indigo-500 bg-size-200 bg-pos-0 hover:bg-pos-100">
-                Load More
+                Load More{" "}
                 <img
                   className="w-4 h-4 flex-shrink-0 animate-spin ml-2"
                   src="assets/images/spinner-icon.svg"
@@ -1526,9 +1522,7 @@ const Home = () => {
             </div>
           </div>
         </section>
-
-        {/* <>Footer section</> */}
-
+        {/*  ====================== Footer Section =============================  */}
         <Footer />
       </div>
     </>

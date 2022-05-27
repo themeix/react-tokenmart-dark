@@ -42,14 +42,13 @@ const HeaderV2 = () => {
                   <li>
                     <Link
                       className="py-3 px-4 flex items-center hover:bg-indigo-100 hover:text-indigo-500 transition duration-500"
-                      to="/hom2"
+                      to="/home2"
                     >
                       {" "}
                       Home v2
                     </Link>
                   </li>
                   <li>
-                    
                     <Link
                       className="py-3 px-4 flex items-center hover:bg-indigo-100 hover:text-indigo-500 transition duration-500"
                       to="/home3"
