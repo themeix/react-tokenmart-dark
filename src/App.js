@@ -32,6 +32,7 @@ import TermCondition from "./pages/TermCondition/TermCondition";
 function App() {
   return (
     <div className="App">
+       <div className="cursor-direction bg-indigo-100"></div>
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Home />} />

@@ -6,6 +6,7 @@ import { Fade, Zoom } from "react-reveal";
 import { AiOutlineClose } from "react-icons/ai";
 import WalletItem from "./WalletItem";
 import Modal from "react-modal/lib/components/Modal";
+import ConnectWalletModal from "../../components/Modal/ConnectWalletModal";
 
 const Wallet = () => {
   const [modalOpen, setmodalOpen] = useState(false);
@@ -69,7 +70,11 @@ const Wallet = () => {
       {/*  ====================== Product Section =============================  */}
       <section className="product-section  mb-20 lg:mb-32">
         <div className="container mx-auto  px-4 z-10">
-          <Zoom>
+          <ConnectWalletModal
+            modalOpen={modalOpen}
+            setmodalOpen={setmodalOpen}
+          />
+          {/* <Zoom>
             <Modal
               isOpen={modalOpen}
               onRequestClose={() => setmodalOpen(false)}
@@ -103,7 +108,7 @@ const Wallet = () => {
                 </div>
               </Zoom>
             </Modal>
-          </Zoom>
+          </Zoom> */}
           <WalletItem modalOpen={modalOpen} setmodalOpen={setmodalOpen} />
           <WalletItem modalOpen={modalOpen} setmodalOpen={setmodalOpen} />
           <WalletItem modalOpen={modalOpen} setmodalOpen={setmodalOpen} />
