@@ -28,11 +28,13 @@ import BlogGrid from "./pages/Blog/BlogGrid";
 import Activity from "./pages/Activity/Activity";
 import Contact from "./pages/Contact/Contact";
 import TermCondition from "./pages/TermCondition/TermCondition";
+import EditProfile from "./pages/EditProfile/EditProfile";
+import Pointer from "./components/Pointer";
 
 function App() {
   return (
     <div className="App">
-       <div className="cursor-direction bg-indigo-100"></div>
+      <Pointer/>
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Home />} />
@@ -60,6 +62,7 @@ function App() {
           <Route path="/blog" element={<BlogGrid />} />
 
           <Route path="/activity" element={<Activity />} />
+          <Route path="/edit-profile" element={<EditProfile />} />
 
           <Route path="/contact" element={<Contact />} />
           <Route path="/term-condition" element={<TermCondition />} />

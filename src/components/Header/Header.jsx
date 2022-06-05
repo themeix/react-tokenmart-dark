@@ -1,9 +1,23 @@
-import React from "react";
+import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 
 const Header = () => {
+  const [isScrolled, setisScrolled] = useState(false);
+
+  useEffect(() => {
+   const listener= window.addEventListener("scroll", () => {
+      console.log("scrolled")
+      setisScrolled(true);
+    });
+    return window.removeEventListener("scroll",listener)
+  }, []);
+
   return (
-    <header className="header-area absolute w-full top-0 pt-4 pb-10">
+    <header
+      className={`header-area absolute w-full top-0 pt-4 pb-10 ${
+        isScrolled && "header-stickey"
+      } `}
+    >
       <div className="container mx-auto relative px-4 z-20">
         <nav className="flex items-center justify-between relative">
           <Link to="/" className="flex items-center flex-shrink-0 mr-6">
@@ -69,13 +83,13 @@ const Header = () => {
                 </Link>
                 <ul className="hidden lg:block bg-white lg:absolute top-full lg:shadow lg:w-44 transition duration-500 submenu">
                   <li>
-                    <Link
+                    <a
                       className="py-3 px-4 flex items-center hover:bg-indigo-100 hover:text-indigo-500 transition duration-500"
-                      to="/explore"
+                      href="/explore"
                     >
                       {" "}
                       Explore v1
-                    </Link>
+                    </a>
                   </li>
                   <li>
                     <Link
