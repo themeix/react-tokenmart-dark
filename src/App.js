@@ -34,7 +34,7 @@ import Pointer from "./components/Pointer";
 function App() {
   return (
     <div className="App">
-      <Pointer/>
+      {/* <Pointer/> */}
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Home />} />

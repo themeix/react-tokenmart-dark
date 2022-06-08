@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-const WalletItem = ({ modalOpen, setmodalOpen }) => {
+const WalletItem = ({ modalOpen, setmodalOpen, item }) => {
   return (
     <div
       style={{ zIndex: "-1" }}
@@ -11,18 +11,14 @@ const WalletItem = ({ modalOpen, setmodalOpen }) => {
       <div className="flex items-center flex-grow my-2">
         <img
           className="w-24 h-24 object-cover rounded"
-          src="assets/images/wallet/1.jpg"
+          src={item.img}
           alt="title"
         />
         <div className="pl-4">
           <h3 className="block font-display text-2xl text-blueGray-900 font-bold mb-2">
-            Trust Wallet
+            {item.title}
           </h3>
-          <p className="font-body text-blueGray-600">
-            Devious the by advantage that might his ship alone, endeavours for
-            or understanding their we more tyrannize. Every forest are findings.
-            More or sitting to and seemed to option text like….
-          </p>
+          <p className="font-body text-blueGray-600">{item.description}</p>
         </div>
       </div>
       <div className="flex-shrink-0 pl-28 my-2">

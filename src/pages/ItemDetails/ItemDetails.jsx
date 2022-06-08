@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import FooterV2 from "../../components/Footer/FooterV2";
 import Header from "../../components/Header/Header";
+import ConnectWalletModal from "../../components/Modal/ConnectWalletModal";
 import PlaceBidModal from "../../components/Modal/PlaceBidModal";
 
 const ItemDetails = () => {
@@ -159,10 +160,12 @@ const ItemDetails = () => {
               </a>
               <PlaceBidModal
                 modalIsOpen={modalOpen}
-                closeModal={() => {
-                  setmodalOpen(false);
-                }}
+                setmodalOpen={setmodalOpen}
               />
+              {/* <ConnectWalletModal
+                modalOpen={modalOpen}
+                setmodalOpen={setmodalOpen}
+              /> */}
               <nav className="tabs-nav">
                 <ul className="flex items-center">
                   <li className="font-display text-blueGray-900 font-bold mb-2 mr-4 lg:mr-8 active">

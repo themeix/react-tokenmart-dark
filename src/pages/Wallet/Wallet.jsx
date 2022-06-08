@@ -7,6 +7,7 @@ import { AiOutlineClose } from "react-icons/ai";
 import WalletItem from "./WalletItem";
 import Modal from "react-modal/lib/components/Modal";
 import ConnectWalletModal from "../../components/Modal/ConnectWalletModal";
+import { wallets } from "./walletdata";
 
 const Wallet = () => {
   const [modalOpen, setmodalOpen] = useState(false);
@@ -109,10 +110,13 @@ const Wallet = () => {
               </Zoom>
             </Modal>
           </Zoom> */}
-          <WalletItem modalOpen={modalOpen} setmodalOpen={setmodalOpen} />
-          <WalletItem modalOpen={modalOpen} setmodalOpen={setmodalOpen} />
-          <WalletItem modalOpen={modalOpen} setmodalOpen={setmodalOpen} />
-          <WalletItem modalOpen={modalOpen} setmodalOpen={setmodalOpen} />
+          {wallets.map((wallet, index) => (
+            <WalletItem
+              item={wallet}
+              modalOpen={modalOpen}
+              setmodalOpen={setmodalOpen}
+            />
+          ))}
 
           <div
             className="flex flex-wrap lg:flex-nowrap items-center justify-between bg-indigo-50 rounded px-6 py-4 mb-8"

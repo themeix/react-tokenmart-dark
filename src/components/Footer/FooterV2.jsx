@@ -195,7 +195,7 @@ const FooterV2 = () => {
       </div>
       <Link
         to="/#"
-        className="footer-back w-10 h-10 hidden fixed bottom-8 right-8 z-50 bg-blueGray-600 rounded-lg items-center justify-center"
+        className="footer-back w-10 h-10  fixed bottom-8 right-8 z-50 bg-blueGray-600 rounded-lg items-center justify-center"
       >
         <svg
           width={18}

@@ -1,11 +1,11 @@
-import React,{ useEffect } from "react";
+import React, { useEffect } from "react";
 import Modal from "react-modal";
 import { OuterClick } from "react-outer-click";
 import { Fade, Zoom } from "react-reveal";
 import ReactDOM from "react-dom";
 import { AiOutlineClose } from "react-icons/ai";
 
-const PlaceBidModal = ({ modalIsOpen, afterOpenModal, closeModal }) => {
+const PlaceBidModal = ({ modalIsOpen, afterOpenModal, setmodalOpen }) => {
   const modalRoot = document.getElementById("portal");
 
   return ReactDOM.createPortal(
@@ -14,16 +14,16 @@ const PlaceBidModal = ({ modalIsOpen, afterOpenModal, closeModal }) => {
         <OuterClick
           onOuterClick={(event) => {
             event.preventDefault();
-            closeModal();
+            setmodalOpen(false);
           }}
         >
           <form
             style={{ height: "max-content" }}
-            //   id="popup-modal"
-            className="max-w-xl bg-white m-auto bg-white rounded shadow zoom-anim-dialog  p-10  zoom  h-auto fixed inset-0 z-50 outline-none focus:outline-none"
+              id="popup-modal"
+            className="max-w-xl bg-white m-auto bg-white rounded shadow   p-10  zoom  h-auto fixed inset-0 z-50 "
           >
             <AiOutlineClose
-              onClick={() => closeModal(false)}
+              onClick={() => setmodalOpen(false)}
               size={24}
               style={{ position: "absolute", top: "20px", right: "20px" }}
             />

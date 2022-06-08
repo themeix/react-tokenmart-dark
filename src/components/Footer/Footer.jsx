@@ -230,13 +230,13 @@ const Footer = () => {
           </p>
         </div>
       </div>
-      <Link
-        to="/#"
-        className="footer-back w-10 h-10 hidden fixed bottom-8 right-8 z-50 bg-blueGray-600 rounded-lg items-center justify-center"
+      <a
+        href="#"
+        className="footer-back w-10 h-10  flex fixed bottom-8 right-8 z-50 bg-blueGray-600 rounded-lg items-center justify-center"
       >
         <svg
-          width="18"
-          height="0"
+          width={18}
+          height={10}
           viewBox="0 0 18 10"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
@@ -244,12 +244,12 @@ const Footer = () => {
           <path
             d="M1 9L9 1L17 9"
             stroke="white"
-            strokeWidth="{2}"
+            strokeWidth={2}
             strokeLinecap="round"
             strokeLinejoin="round"
           />
         </svg>
-      </Link>
+      </a>
     </footer>
   );
 };

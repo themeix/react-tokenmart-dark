@@ -3,15 +3,35 @@ import { AiOutlineClose } from "react-icons/ai";
 import { OuterClick } from "react-outer-click";
 import ReactDom from "react-dom";
 import { Link } from "react-router-dom";
+import ReactModal from "react-modal";
 const ConnectWalletModal = ({ modalOpen, setmodalOpen }) => {
-  return ReactDom.createPortal(
+  const customStyles = {
+    content: {
+      top: "50%",
+      left: "50%",
+      right: "auto",
+      bottom: "auto",
+      marginRight: "-50%",
+      transform: "translate(-50%, -50%)",
+      padding: "0",
+      width: "auto",
+      height: "max-content",
+      borderRadius: "10px",
+    },
+  };
+  return (
     <>
-      {modalOpen && (
+      <ReactModal
+        className="p-10    h-auto fixed inset-0 z-50 outline-none focus:outline-none"
+        isOpen={modalOpen}
+        onRequestClose={() => setmodalOpen(false)}
+        style={customStyles}
+      >
         <OuterClick onOuterClick={() => setmodalOpen(false)}>
-          <div >
+          <div>
             <div
               style={{ height: "max-content" }}
-              className="max-w-sm m-auto bg-white rounded shadow zoom  p-10 fixed inset-0 z-50 outline-none focus:outline-none"
+              className="max-w-sm m-auto bg-white rounded shadow zoom  p-10 "
             >
               <AiOutlineClose
                 onClick={() => setmodalOpen(false)}
@@ -38,9 +58,8 @@ const ConnectWalletModal = ({ modalOpen, setmodalOpen }) => {
             </div>
           </div>
         </OuterClick>
-      )}
-    </>,
-    document.getElementById("portal")
+      </ReactModal>
+    </>
   );
 };
 
