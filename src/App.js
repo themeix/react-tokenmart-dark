@@ -30,6 +30,10 @@ import Contact from "./pages/Contact/Contact";
 import TermCondition from "./pages/TermCondition/TermCondition";
 import EditProfile from "./pages/EditProfile/EditProfile";
 import Pointer from "./components/Pointer";
+import LeaderBoard from "./pages/LeaderBoard/LeaderBoard";
+import NotFound from "./pages/404/404";
+import CreatorFeatured from "./pages/CreatorFeatured/CreatorFeatured";
+import Intro from "./pages/Intro/Intro";
 
 function App() {
   return (
@@ -52,6 +56,7 @@ function App() {
           <Route path="/creator-published" element={<CreatorPublished />} />
           <Route path="/creator-follower" element={<CreatorFollower />} />
           <Route path="/creator-activity" element={<CreatorActivity />} />
+          <Route path="/creator-featured" element={<CreatorFeatured />} />
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
           <Route path="/forget-password" element={<ForgetPassword />} />
@@ -63,9 +68,12 @@ function App() {
 
           <Route path="/activity" element={<Activity />} />
           <Route path="/edit-profile" element={<EditProfile />} />
+          <Route path="/leaderboard" element={<LeaderBoard />} />
 
           <Route path="/contact" element={<Contact />} />
           <Route path="/term-condition" element={<TermCondition />} />
+          <Route path="/404" element={<NotFound />} />
+          <Route path="/intro" element={<Intro />} />
         </Routes>
       </BrowserRouter>
     </div>
