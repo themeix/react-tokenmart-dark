@@ -2,6 +2,7 @@ import { useState } from "react";
 import FooterV2 from "../../components/Footer/FooterV2";
 import Header from "../../components/Header/Header";
 import PlaceBidModal from "../../components/Modal/PlaceBidModal";
+import Timer7 from "../../components/Timer/Timer7";
 import Tabs from "./Tabs";
 
 const ItemDetailsV2 = () => {
@@ -166,10 +167,10 @@ const ItemDetailsV2 = () => {
                   <h4 className="font-display text-blueGray-900 font-bold">
                     Auction ends in
                   </h4>
-                  <div className="font-body  font-semibold leading-4 countdown-time7 grid grid-cols-4 gap-4 text-center my-2" />
+                  <div className="font-body  font-semibold leading-4 countdown-time7 grid grid-cols-4 gap-4 text-center my-2" > <Timer7/> </div>
                 </div>
               </div>
-              <a
+              <bitton
               onClick={()=>setmodalOpen(true)}
                 href=""
                 className="popup-modal btn inline-block text-xl text-white font-body font-medium rounded py-3 px-8 mb-10 transition-all duration-500 bg-gradient-to-tl from-indigo-500 via-purple-500 to-indigo-500 bg-size-200 bg-pos-0 hover:bg-pos-100"
@@ -180,7 +181,7 @@ const ItemDetailsV2 = () => {
                   alt="title"
                 />{" "}
                 Place a bid
-              </a>
+              </bitton>
 
               <PlaceBidModal
                 modalIsOpen={modalOpen}

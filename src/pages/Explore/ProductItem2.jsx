@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import Timer2 from '../../components/Timer/Timer2'
 
 const ProductItem2 = ({item}) => {
   return (
@@ -14,7 +15,10 @@ const ProductItem2 = ({item}) => {
           src={item.img}
           alt="title"
         />
-        <div className="product-meta text-white leading-4 font-body font-medium countdown-time4 absolute bottom-4 right-4 grid grid-cols-4 gap-4 text-center bg-gradient-to-r from-purple-500 to-indigo-500 rounded p-3" />
+
+        <div className="product-meta text-white leading-4 font-body font-medium countdown-time4 absolute bottom-4 right-4 grid grid-cols-4 gap-4 text-center bg-gradient-to-r from-purple-500 to-indigo-500 rounded p-3" >
+        <Timer2/>
+          </div>
       </div>
       <div className="product-content px-6 pt-6">
         <div className="flex items-center justify-between">

@@ -7,7 +7,6 @@ import Tabs from "./Tabs";
 
 const ItemDetails = () => {
   const [modalOpen, setmodalOpen] = useState(false);
-  const [activeTab, setactiveTab] = useState(0);
 
   return (
     <div>
@@ -164,12 +163,8 @@ const ItemDetails = () => {
                 modalIsOpen={modalOpen}
                 setmodalOpen={setmodalOpen}
               />
-              {/* <ConnectWalletModal
-                modalOpen={modalOpen}
-                setmodalOpen={setmodalOpen}
-              /> */}
 
-              <Tabs activeTab={activeTab} />
+              <Tabs />
             </div>
           </div>
         </div>

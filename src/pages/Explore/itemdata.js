@@ -5,7 +5,7 @@ export const products=[
     },
     {
         img:"assets/images/product/2.gif",
-        name:"Commander Titan #04",
+        name:"Commander  #04",
     },
     {
         img:"assets/images/product/3.gif",
@@ -13,19 +13,19 @@ export const products=[
     },
     {
         img:"assets/images/product/4.gif",
-        name:"Creative Artwork #04",
+        name:"Creative  #04",
     },
     {
         img:"assets/images/product/4.gif",
-        name:"Creative Artwork #04",
+        name:"Creative  #04",
     },
     {
         img:"assets/images/product/20.jpg",
-        name:"Commander Titan #05",
+        name:"Commander  #05",
     },
     {
         img:"assets/images/product/20.jpg",
-        name:"Commander Titan #05",
+        name:"Commander  #05",
     },
     {
         img:"assets/images/product/21.jpg",
