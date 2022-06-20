@@ -1,3 +1,4 @@
+// import jQuery from "jquery";
 (function ($) {
   "use strict";
   /*  Preloader */
@@ -14,7 +15,7 @@
     }
   });
   /*  Mobile Menu */
-  // $(".mobile-toggle").on("click", function () {
+  // document.querySelectorAll(".mobile-toggle").on("click", function () {
   //   $(this).toggleClass("open");
   //   $(".mobile-menu").slideToggle();
   // });
@@ -26,7 +27,7 @@
   //   }
   //   $(this).parent().siblings(".submenu").slideToggle();
   // });
-  /*  Hero Slider */
+  // /*  Hero Slider */
 
   if ($(".swiper-container .swiper-slide").length > 1) {
     var swiper = new Swiper(".hero-slider", {

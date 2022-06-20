@@ -9,24 +9,24 @@ import jQuery from "jquery";
   /*  Fixed Header*/
   $(window).scroll(function () {
     if ($(this).scrollTop() > 0) {
-      $(".header-area").addClass("header-sticky");
+      // $(".header-area").addClass("header-sticky");
     } else {
-      $(".header-area").removeClass("header-sticky");
+      // $(".header-area").removeClass("header-sticky");
     }
   });
   /*  Mobile Menu */
-  // document.querySelectorAll(".mobile-toggle").on("click", function () {
-  //   $(this).toggleClass("open");
-  //   $(".mobile-menu").slideToggle();
-  // });
-  // $(".toggle").on("click", function () {
-  //   if ($(this).text().includes("-")) {
-  //     $(this).text("+");
-  //   } else {
-  //     $(this).text("-");
-  //   }
-  //   $(this).parent().siblings(".submenu").slideToggle();
-  // });
+  document.querySelectorAll(".mobile-toggle").on("click", function () {
+    $(this).toggleClass("open");
+    $(".mobile-menu").slideToggle();
+  });
+  $(".toggle").on("click", function () {
+    if ($(this).text().includes("-")) {
+      $(this).text("+");
+    } else {
+      $(this).text("-");
+    }
+    $(this).parent().siblings(".submenu").slideToggle();
+  });
   // /*  Hero Slider */
 
   if ($(".swiper-container .swiper-slide").length > 1) {

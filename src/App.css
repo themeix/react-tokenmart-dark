@@ -7,4 +7,15 @@
 
 @import "./assets/css/app.min.css";
 
-
+.modalContainer {
+  background-color: rgba(0, 0, 0, 0.692);
+  z-index: 334 !important;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+.modalContainer > * {
+  z-index: 335 !important;
+}

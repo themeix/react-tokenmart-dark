@@ -148,9 +148,9 @@ const ItemDetails = () => {
                   ≈$26.69
                 </p>
               </div>
-              <a
+              <button
                 onClick={() => setmodalOpen(true)}
-                href="#popup-modal"
+                href=""
                 className="popup-modal btn inline-block text-xl text-white font-body font-medium rounded py-3 px-8 mb-10 transition-all duration-500 bg-gradient-to-tl from-indigo-500 via-purple-500 to-indigo-500 bg-size-200 bg-pos-0 hover:bg-pos-100"
               >
                 <img
@@ -159,7 +159,7 @@ const ItemDetails = () => {
                   alt="title"
                 />{" "}
                 Place a bid
-              </a>
+              </button>
               <PlaceBidModal
                 modalIsOpen={modalOpen}
                 setmodalOpen={setmodalOpen}
@@ -168,7 +168,7 @@ const ItemDetails = () => {
                 modalOpen={modalOpen}
                 setmodalOpen={setmodalOpen}
               /> */}
-             
+
               <Tabs activeTab={activeTab} />
             </div>
           </div>
