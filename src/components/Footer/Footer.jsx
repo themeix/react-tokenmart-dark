@@ -230,8 +230,8 @@ const Footer = () => {
           </p>
         </div>
       </div>
-      <a
-        href="#"
+      <Link
+        to="/"
         className="footer-back w-10 h-10  flex fixed bottom-8 right-8 z-50 bg-blueGray-600 rounded-lg items-center justify-center"
       >
         <svg
@@ -249,7 +249,7 @@ const Footer = () => {
             strokeLinejoin="round"
           />
         </svg>
-      </a>
+      </Link>
     </footer>
   );
 };
