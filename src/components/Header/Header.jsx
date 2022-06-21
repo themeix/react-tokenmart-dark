@@ -16,6 +16,7 @@ const Header = () => {
 
   return (
     <header
+      style={{ position: isScrolled ? "fixed" : "sticky" }}
       className={`header-area header-stickey absolute w-full top-0 pt-4 pb-10 
       } `}
     >
