@@ -5,18 +5,21 @@ import Dropdown from "./Dropdown";
 const Header = () => {
   const [isScrolled, setisScrolled] = useState(false);
   const [dropdown, setdropdown] = useState(true);
+  const [YOffset, setYOffset] = useState(0);
 
   useEffect(() => {
-    const listener = window.addEventListener("scroll", () => {
-      console.log("scrolled");
+    const listener = window.addEventListener("scroll", (e) => {
+      setYOffset(window.pageYOffset);
+
       setisScrolled(true);
     });
+
     return window.removeEventListener("scroll", listener);
   }, []);
-
+  console.log(YOffset);
   return (
     <header
-      style={{ position: isScrolled ? "fixed" : "sticky" }}
+      style={{ position: YOffset > 100 ? "sticky" : "" }}
       className={`header-area header-stickey absolute w-full top-0 pt-4 pb-10 
       } `}
     >
