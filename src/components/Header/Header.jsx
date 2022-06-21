@@ -19,7 +19,7 @@ const Header = () => {
   console.log(YOffset);
   return (
     <header
-      style={{ position: YOffset > 100 ? "sticky" : "" }}
+      style={{ position: YOffset > 100 ? "fixed" : "" }}
       className={`header-area header-stickey absolute w-full top-0 pt-4 pb-10 
       } `}
     >
