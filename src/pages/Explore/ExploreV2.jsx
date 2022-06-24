@@ -1,4 +1,4 @@
-import React from "react";
+import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import FooterV2 from "../../components/Footer/FooterV2";
 import Header from "../../components/Header/Header";
@@ -6,6 +6,7 @@ import { products } from "./itemdata";
 import ProductItem2 from "./ProductItem2";
 
 const ExploreV2 = () => {
+
   return (
     <div>
       <Header />

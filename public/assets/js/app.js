@@ -1,4 +1,6 @@
-import jQuery from "jquery";
+import $ from "jquery";
+window.jQuery = window.$ = $;
+require("jquery-nice-select");
 (function ($) {
   "use strict";
   /*  Preloader */
@@ -151,16 +153,16 @@ import jQuery from "jquery";
   /* Fitvids Js */
   fitvids(".container");
   /*  current date show  */
-  $("#spanYear").html(new Date().getFullYear());
-  /*  Tabs nav  */
-  $(".tabs-nav a").click(function () {
-    $(".tabs-nav li").removeClass("active");
-    $(this).parent().addClass("active");
-    let currentTab = $(this).attr("href");
-    $(".tabs-content > .tabs-item").hide();
-    $(currentTab).show();
-    return false;
-  });
+  // $("#spanYear").html(new Date().getFullYear());
+  // /*  Tabs nav  */
+  // $(".tabs-nav a").click(function () {
+  //   $(".tabs-nav li").removeClass("active");
+  //   $(this).parent().addClass("active");
+  //   let currentTab = $(this).attr("href");
+  //   $(".tabs-content > .tabs-item").hide();
+  //   $(currentTab).show();
+  //   return false;
+  // });
   /*  Modal-popup  */
   $(".popup-modal").magnificPopup({
     type: "inline",

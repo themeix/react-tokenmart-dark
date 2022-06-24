@@ -24,12 +24,12 @@ const FeaturedAuctions = ({products}) => {
               Featured Auctions
             </h3>
           </div>
-          <Link
-            to="/explore"
+          <a
+            href="/explore"
             className="arrow-btn block bg-indigo-100 text-indigo-500 text-sm text-sm font-body font-bold rounded py-2 px-4 ml-14 transition duration-500 hover:bg-indigo-50"
           >
             See All
-          </Link>
+          </a>
         </div>
 
         <div className="relative">
@@ -415,19 +415,19 @@ const FeaturedAuctions = ({products}) => {
             </Swiper>
           </div>
           <div
-            style={{ width: "70px", height: "70px" }}
+            style={{ width: "50px", height: "50px" }}
             className="swiper-button-prev bg-white shadow rounded-full bg-gradient-to-r transition duration-500 hover:from-indigo-500 hover:to-purple-500 2xl:-translate-x-24"
           />
           <div
             style={{
-              width: "70px",
-              height: "70px",
+              width: "50px",
+              height: "50px",
               dispaly: "flex",
               alignItems: "center",
               justifyContent: "center",
               fontSize: "20px",
             }}
-            className="swiper-button-next rotate-180 flex align-center justify-center bg-white shadow rounded-full bg-gradient-to-r transition duration-500 hover:from-indigo-500 hover:to-purple-500 2xl:translate-x-24"
+            className="swiper-button-next  flex align-center justify-center bg-white shadow rounded-full bg-gradient-to-r transition duration-500 hover:from-indigo-500 hover:to-purple-500 2xl:translate-x-24"
           />
         </div>
       </div>

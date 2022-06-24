@@ -1,11 +1,25 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import { useRef } from "react";
 import { Link } from "react-router-dom";
 import Footer from "../../components/Footer/Footer";
 import Header from "../../components/Header/Header";
 import ExploreTabs from "./ExploreTabs";
 import { products } from "./itemdata";
 import ProductItem from "./ProductItem";
+
+require("jquery-nice-select");
 const ExploreV1 = () => {
+  const selectRef = useRef();
+  const [reload, setreload] = useState(false);
+
+  useEffect(() => {
+    if (window.location.search !== "?reloaded") {
+      console.log(window.location.search )
+      window.location.reload();
+      window.location.search = "reloaded";
+    }
+  }, []);
+
   return (
     <div>
       <Header />
@@ -55,15 +69,17 @@ const ExploreV1 = () => {
         <div className="container mx-auto relative px-4 z-10">
           <div className="flex justify-between mb-8 lg:mb-14">
             <div className="flex items-center pr-6">
-              <select className="multiple-select2 block lg:hidden text-blueGray-600">
+              <select
+                ref={selectRef}
+                className="multiple-select2 block lg:hidden text-blueGray-600"
+              >
                 <option>All </option>
                 <option>Art </option>
                 <option>Music </option>
                 <option>Domain Names </option>
                 <option>Virtual Worlds </option>
               </select>
-              <ExploreTabs/>
-             
+              <ExploreTabs />
             </div>
             <div className="flex relative lg:top-4">
               <span className="font-body text-blueGray-600">Token</span>
@@ -77,18 +93,10 @@ const ExploreV1 = () => {
             </div>
           </div>
           <div className="product-infinite grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
-           {
-             products.map((product,index)=><ProductItem key={index} item={product} />)
-           }
-           
-           
-            
-          
-           
-            
-           
-             
-           </div>
+            {products.map((product, index) => (
+              <ProductItem key={index} item={product} />
+            ))}
+          </div>
           <div className="flex justify-center mt-8 lg:mt-14">
             <button className="btn load-more-btn flex items-center text-white font-body font-bold rounded px-6 py-4 transition-all duration-500 bg-gradient-to-tl from-indigo-500 via-purple-500 to-indigo-500 bg-size-200 bg-pos-0 hover:bg-pos-100">
               Load More{" "}

@@ -1,315 +1,90 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
+import { list } from "./list";
 
-const Dropdown = ({ dropdown }) => {
-  const [active, setactive] = useState(null);
+const Dropdown = ({ dropdown, active, setactive }) => {
   const [hidden, sethidden] = useState(dropdown);
-  const [classes, setclasses] = useState("");
-
-  useEffect(() => {
-    setclasses(
-      "mobile-menu bg-white lg:bg-transparent shadow lg:shadow-none absolute lg:relative inset-x-0  lg:flex lg:flex-grow items-center text-base text-blueGray-600 font-semibold mt-7 lg:mt-0 mobile-hover " +
-        ""
-    );
-  }, [hidden]);
-
-  console.log(hidden);
+  const [activeItem, setactiveItem] = useState(null);
+  const [activeSubItem, setactiveSubItem] = useState(null);
 
   return (
     <div className="w-full flex-grow lg:flex lg:items-center lg:w-auto">
       <ul
-        style={{ display: hidden ? "none" : "", opacity: hidden ? 0 : 1 }}
-        className={classes}
+        className={`mobile-menu bg-white lg:bg-transparent shadow lg:shadow-none absolute lg:relative inset-x-0 ${
+          !active && "hidden"
+        } lg:flex lg:flex-grow items-center text-base text-blueGray-600 font-semibold mt-7 lg:mt-0 mobile-hover`}
       >
-        <li className="relative dropdown lg:mr-4">
-          <Link
-            className="p-4 flex items-center hover:text-indigo-500 transition duration-500 arrow"
-            to="/"
+        {list.map((listitem, index) => (
+          <li
+            // style={{display:activeItem==li}}
+            className={`relative dropdown lg:mr-4 ${
+              activeItem == listitem.id && "active"
+            }`}
+            key={index}
           >
-            Home{" "}
-            <span className="leading-5 text-2xl text-center bg-blueGray-100  w-6 h-6 absolute right-2 top-4 block lg:hidden ">
-              +
-            </span>
-          </Link>
-          <ul className=" lg:block bg-white lg:absolute top-full lg:shadow lg:w-44 transition duration-500 submenu">
-            <li>
-              <Link
-                className="py-3 px-4 flex items-center hover:bg-indigo-100 hover:text-indigo-500 transition duration-500"
-                to="/"
-              >
-                {" "}
-                Home v1
-              </Link>
-            </li>
-            <li>
-              <Link
-                className="py-3 px-4 flex items-center hover:bg-indigo-100 hover:text-indigo-500 transition duration-500"
-                to="/home2"
-              >
-                {" "}
-                Home v2
-              </Link>
-            </li>
-            <li>
-              <Link
-                className="py-3 px-4 flex items-center hover:bg-indigo-100 hover:text-indigo-500 transition duration-500"
-                to="/home3"
-              >
-                {" "}
-                Home v3
-              </Link>
-            </li>
-          </ul>
-        </li>
-        <li className="relative dropdown lg:mr-4">
-          <Link
-            className="p-4 flex items-center hover:text-indigo-500 transition duration-500 arrow"
-            to="/#"
-          >
-            {" "}
-            Explore{" "}
-            <span className="leading-5 text-2xl text-center bg-blueGray-100  w-6 h-6 absolute right-2 top-4 block lg:hidden toggle">
-              +
-            </span>
-          </Link>
-          <ul className="hidden lg:block bg-white lg:absolute top-full lg:shadow lg:w-44 transition duration-500 submenu">
-            <li>
-              <a
-                className="py-3 px-4 flex items-center hover:bg-indigo-100 hover:text-indigo-500 transition duration-500"
-                href="/explore"
-              >
-                {" "}
-                Explore v1
-              </a>
-            </li>
-            <li>
-              <Link
-                className="py-3 px-4 flex items-center hover:bg-indigo-100 hover:text-indigo-500 transition duration-500"
-                to="/explore2"
-              >
-                {" "}
-                Explore v2
-              </Link>
-            </li>
-            <li>
-              <Link
-                className="py-3 px-4 flex items-center hover:bg-indigo-100 hover:text-indigo-500 transition duration-500"
-                to="/item-single"
-              >
-                {" "}
-                Item Details v1
-              </Link>
-            </li>
-            <li>
-              <Link
-                className="py-3 px-4 flex items-center hover:bg-indigo-100 hover:text-indigo-500 transition duration-500"
-                to="/item-single2"
-              >
-                {" "}
-                Item Details v2
-              </Link>
-            </li>
-            <li>
-              <Link
-                className="py-3 px-4 flex items-center hover:bg-indigo-100 hover:text-indigo-500 transition duration-500"
-                to="/item-single3"
-              >
-                {" "}
-                Item Details v3
-              </Link>
-            </li>
-            <li>
-              <Link
-                className="py-3 px-4 flex items-center hover:bg-indigo-100 hover:text-indigo-500 transition duration-500"
-                to="/wallet"
-              >
-                {" "}
-                Wallet
-              </Link>
-            </li>
-          </ul>
-        </li>
-        <li className="relative dropdown lg:mr-4">
-          <Link
-            className="p-4 flex items-center hover:text-indigo-500 transition duration-500 arrow"
-            to="/#"
-          >
-            {" "}
-            Pages{" "}
-            <span className="leading-5 text-2xl text-center bg-blueGray-100  w-6 h-6 absolute right-2 top-4 block lg:hidden toggle">
-              +
-            </span>
-          </Link>
-          <ul className="hidden lg:block bg-white lg:absolute top-full lg:shadow lg:w-44 transition duration-500 submenu">
-            <li>
-              <Link
-                className="py-3 px-4 flex items-center hover:bg-indigo-100 hover:text-indigo-500 transition duration-500"
-                to="/create-item"
-              >
-                {" "}
-                Create Item{" "}
-              </Link>
-            </li>
-            <li className="relative dropdown">
-              <Link
-                className="py-3 px-4 flex items-center hover:bg-indigo-100 hover:text-indigo-500 transition duration-500 arrow"
-                to="/#"
-              >
-                {" "}
-                Authors{" "}
-                <span className="leading-5 text-2xl text-center bg-blueGray-100  w-6 h-6 absolute right-2 top-4 block lg:hidden toggle">
-                  +
+            <Link
+              className={`p-4 flex items-center hover:text-indigo-500 transition duration-500  ${
+                listitem.submenu.length > 0 ? "arrow" : ""
+              }`}
+              to={listitem.link}
+            >
+              {listitem.title}
+              {listitem.submenu.length > 0 && (
+                <span
+                  onClick={() => setactiveItem(activeItem==listitem.id ? null : listitem.id)}
+                  className="leading-5 text-2xl text-center bg-blueGray-100 w-6 h-6 absolute right-2 top-4 block lg:hidden toggle"
+                >
+                  {activeItem !== listitem.id ? "+" : "-"}
                 </span>
-              </Link>
-              <ul className="hidden lg:block bg-white lg:absolute top-0 left-full lg:shadow lg:w-44 transition duration-500 submenu">
-                <li>
+              )}
+            </Link>
+            <ul
+              className={` lg:block bg-white lg:absolute top-full lg:shadow lg:w-44 transition duration-500 submenu `}
+            >
+              {listitem.submenu.map((subitem, index) => (
+                <li
+                  key={index}
+                  className={`relative dropdown lg:mr-4 ${
+                    activeSubItem == subitem.id && "active"
+                  }`}
+                >
                   <Link
-                    className="py-3 px-4 flex items-center hover:bg-indigo-100 hover:text-indigo-500 transition duration-500"
-                    to="/creator-published"
+                    className={`py-3 px-4 flex items-center hover:bg-indigo-100 hover:text-indigo-500 transition duration-500 ${
+                      subitem.submenu.length > 0 ? "arrow" : ""
+                    }`}
+                    to={subitem.link}
                   >
-                    Authors
+                    {subitem.title}
+
+                    {subitem.submenu.length > 0 && (
+                      <span
+                        onClick={() =>
+                          setactiveSubItem(activeSubItem==subitem.id ? null : subitem.id)
+                        }
+                        className="leading-5 text-2xl text-center bg-blueGray-100 w-6 h-6 absolute right-2 top-4 block lg:hidden toggle"
+                      >
+                        {activeSubItem !== subitem.id ? "+" : "-"}
+                      </span>
+                    )}
                   </Link>
+                  <ul className="hidden lg:block bg-white lg:absolute top-0 left-full lg:shadow lg:w-44 transition duration-500 submenu">
+                    {subitem.submenu.map((superSubItem, index) => (
+                      <li>
+                        <Link
+                          key={index}
+                          className="py-3 px-4 flex items-center hover:bg-indigo-100 hover:text-indigo-500 transition duration-500"
+                          to={superSubItem.link}
+                        >
+                          {superSubItem.title}
+                        </Link>
+                      </li>
+                    ))}
+                  </ul>
                 </li>
-                <li>
-                  <Link
-                    className="py-3 px-4 flex items-center hover:bg-indigo-100 hover:text-indigo-500 transition duration-500"
-                    to="/creator-follower"
-                  >
-                    Authors Profile
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    className="py-3 px-4 flex items-center hover:bg-indigo-100 hover:text-indigo-500 transition duration-500"
-                    to="/creator-activity"
-                  >
-                    Authors Activity
-                  </Link>
-                </li>
-              </ul>
-            </li>
-            <li className="relative dropdown">
-              <Link
-                className="py-3 px-4 flex items-center hover:bg-indigo-100 hover:text-indigo-500 transition duration-500 arrow"
-                to="/#"
-              >
-                {" "}
-                User{" "}
-                <span className="leading-5 text-2xl text-center bg-blueGray-100  w-6 h-6 absolute right-2 top-4 block lg:hidden toggle">
-                  +
-                </span>
-              </Link>
-              <ul className="hidden lg:block bg-white lg:absolute top-0 left-full lg:shadow lg:w-44 transition duration-500 submenu">
-                <li>
-                  <Link
-                    className="py-3 px-4 flex items-center hover:bg-indigo-100 hover:text-indigo-500 transition duration-500"
-                    to="/login"
-                  >
-                    Login
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    className="py-3 px-4 flex items-center hover:bg-indigo-100 hover:text-indigo-500 transition duration-500"
-                    to="/register"
-                  >
-                    Register
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    className="py-3 px-4 flex items-center hover:bg-indigo-100 hover:text-indigo-500 transition duration-500"
-                    to="/forget-password"
-                  >
-                    Forget Password
-                  </Link>
-                </li>
-              </ul>
-            </li>
-            <li className="relative dropdown">
-              <Link
-                className="py-3 px-4 flex items-center hover:bg-indigo-100 hover:text-indigo-500 transition duration-500 arrow"
-                to="/#"
-              >
-                {" "}
-                Blog{" "}
-                <span className="leading-5 text-2xl text-center bg-blueGray-100  w-6 h-6 absolute right-2 top-4 block lg:hidden toggle">
-                  +
-                </span>
-              </Link>
-              <ul className="hidden lg:block bg-white lg:absolute top-0 left-full lg:shadow lg:w-44 transition duration-500 submenu">
-                <li>
-                  <Link
-                    className="py-3 px-4 flex items-center hover:bg-indigo-100 hover:text-indigo-500 transition duration-500"
-                    to="/single"
-                  >
-                    Blog Details
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    className="py-3 px-4 flex items-center hover:bg-indigo-100 hover:text-indigo-500 transition duration-500"
-                    to="/category"
-                  >
-                    Category
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    className="py-3 px-4 flex items-center hover:bg-indigo-100 hover:text-indigo-500 transition duration-500"
-                    to="/tag"
-                  >
-                    Tag
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    className="py-3 px-4 flex items-center hover:bg-indigo-100 hover:text-indigo-500 transition duration-500"
-                    to="/blog"
-                  >
-                    Blog Grid
-                  </Link>
-                </li>
-              </ul>
-            </li>
-            <li>
-              <Link
-                className="py-3 px-4 flex items-center hover:bg-indigo-100 hover:text-indigo-500 transition duration-500"
-                to="/contact"
-              >
-                {" "}
-                Contact{" "}
-              </Link>
-            </li>
-            <li>
-              <Link
-                className="py-3 px-4 flex items-center hover:bg-indigo-100 hover:text-indigo-500 transition duration-500"
-                to="/term-condition"
-              >
-                {" "}
-                Term &amp; Condition{" "}
-              </Link>
-            </li>
-            <li>
-              <Link
-                className="py-3 px-4 flex items-center hover:bg-indigo-100 hover:text-indigo-500 transition duration-500"
-                to="/404"
-              >
-                {" "}
-                404{" "}
-              </Link>
-            </li>
-          </ul>
-        </li>
-        <li>
-          <Link
-            className="p-4 flex items-center hover:text-indigo-500 transition duration-500"
-            to="/activity"
-          >
-            {" "}
-            Activity{" "}
-          </Link>
-        </li>
+              ))}
+            </ul>
+          </li>
+        ))}
       </ul>
       <form className="header-newsletter hidden lg:flex items-center">
         <div className="flex flex-1 items-center xl:w-80 bg-white shadow transition duration-500 hover:shadow-lg rounded h-14 p-4 mr-6">
@@ -331,10 +106,10 @@ const Dropdown = ({ dropdown }) => {
         type="submit"
       >
         <img
-          className="w-4 h-4 flex-shrink-0  mr-2"
+          className="w-4 h-4 flex-shrink-0 mr-2"
           src="assets/images/wallet-icon.svg"
           title="title"
-        />{" "}
+        />
         Connect Wallet
       </Link>
     </div>
