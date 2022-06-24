@@ -162,6 +162,7 @@ body {
     opacity: 0;
     display: none;
     transition: opacity 0.4s ease-in;
+    margin: 0;
   }
   .mobile-menu > li.active > ul {
     display: block;

@@ -17,7 +17,7 @@ const Dropdown = ({ dropdown, active, setactive }) => {
         {list.map((listitem, index) => (
           <li
             // style={{display:activeItem==li}}
-            className={`relative dropdown lg:mr-4 ${
+            className={`relative dropdown  ${
               activeItem == listitem.id && "active"
             }`}
             key={index}
@@ -44,7 +44,7 @@ const Dropdown = ({ dropdown, active, setactive }) => {
               {listitem.submenu.map((subitem, index) => (
                 <li
                   key={index}
-                  className={`relative dropdown lg:mr-4 ${
+                  className={`relative dropdown  ${
                     activeSubItem == subitem.id && "active"
                   }`}
                 >

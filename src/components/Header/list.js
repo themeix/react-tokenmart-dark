@@ -94,7 +94,7 @@ export const list = [
       { id: "305", title: "Contact", link: "/contact", submenu: [] },
       {
         id: "306",
-        title: "Terms & Conditions",
+        title: "Term & Condition",
         link: "/term-condition",
         submenu: [],
       },

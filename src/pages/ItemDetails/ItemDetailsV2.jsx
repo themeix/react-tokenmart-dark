@@ -167,7 +167,7 @@ const ItemDetailsV2 = () => {
                   <h4 className="font-display text-blueGray-900 font-bold">
                     Auction ends in
                   </h4>
-                  <div className="font-body  font-semibold leading-4 countdown-time7 grid grid-cols-4 gap-4 text-center my-2" > <Timer7/> </div>
+                  <Timer7/> 
                 </div>
               </div>
               <bitton
