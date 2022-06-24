@@ -152,7 +152,10 @@ const HeaderV2 = () => {
               </li>
             </ul>
           </div>
-          <button className="bg-blueGray-50 mobile-toggle block lg:hidden" onClick={()=>setactive(!active)} >
+          <button
+            className="bg-blueGray-50 mobile-toggle block lg:hidden"
+            onClick={() => setactive(!active)}
+          >
             <span className="bg-blueGray-600" />
             <span className="bg-blueGray-600" />
             <span className="bg-blueGray-600" />

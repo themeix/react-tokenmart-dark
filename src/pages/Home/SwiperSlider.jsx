@@ -5,6 +5,7 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import { Pagination, Navigation, Autoplay } from "swiper";
+import Timer7 from "../../components/Timer/Timer7";
 const SwiperSlider = () => {
   return (
     <section className="hero-section relative pt-32 pb-28 lg:pt-32 lg:pb-20">
@@ -104,7 +105,7 @@ const SwiperSlider = () => {
                         ≈$26.69
                       </p>
                     </div>
-                    <div className="hero-meta font-body font-semibold leading-4 countdown-time8 grid grid-cols-4 gap-4 text-center my-2" />
+                    <Timer7/>
                   </div>
                   <div className="mt-8">
                     <Link
@@ -186,7 +187,7 @@ const SwiperSlider = () => {
                         ≈$26.69
                       </p>
                     </div>
-                    <div className="hero-meta font-body font-semibold leading-4 countdown-time8 grid grid-cols-4 gap-4 text-center my-2" />
+                    <Timer7/>
                   </div>
                   <div className="mt-8">
                     <Link
