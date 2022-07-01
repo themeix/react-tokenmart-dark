@@ -73,8 +73,17 @@ body {
   background-color: rgba(15,23,42,var(--tw-bg-opacity))!important;
 } */
 
+.rounded-l {
+  border-top-left-radius: 8px!important;
+  border-bottom-left-radius: 8px!important;
+}
 .from-indigo-500 {
   --tw-gradient-from: #6366f1 !important;
   --tw-gradient-stop: var(--tw-gradient-from),
     var(--tw-gradient-to, rgba(99, 102, 241, 0)) !important;
+}
+
+.activity-box{
+  background-color: #0f172a;
+  border-color: rgba(30,41,59,var(--tw-border-opacity))!important;
 }

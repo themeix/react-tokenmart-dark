@@ -145,7 +145,7 @@ const CreatorActivity = () => {
           </div>
           <div className="activity-infinite max-w-3xl m-auto grid grid-cols-1 gap-8">
             <div
-              className="activity-box bg-purple-50 border border-purple-100 sm:flex p-4 rounded transition duration-500 hover:shadow-lg"
+              className="activity-box border border-blueGray-100 sm:flex p-4 rounded transition duration-500 hover:shadow-lg aos-init aos-animate"
               data-aos="fade-up"
             >
               <div className="flex-shrink-0	activity-image relative rounded">
@@ -188,7 +188,7 @@ const CreatorActivity = () => {
               </div>
             </div>
             <div
-              className="activity-box bg-amber-50 border border-amber-100 sm:flex p-4 rounded transition duration-500 hover:shadow-lg"
+              className="activity-box border border-blueGray-100 sm:flex p-4 rounded transition duration-500 hover:shadow-lg aos-init aos-animate"
               data-aos="fade-up"
             >
               <div className="flex-shrink-0	activity-image relative rounded">
@@ -232,7 +232,7 @@ const CreatorActivity = () => {
               </div>
             </div>
             <div
-              className="activity-box bg-amber-50 border border-amber-100 sm:flex p-4 rounded transition duration-500 hover:shadow-lg"
+              className="activity-box border border-blueGray-100 sm:flex p-4 rounded transition duration-500 hover:shadow-lg aos-init aos-animate"
               data-aos="fade-up"
             >
               <div className="flex-shrink-0	activity-image relative rounded">
@@ -276,7 +276,7 @@ const CreatorActivity = () => {
               </div>
             </div>
             <div
-              className="activity-box bg-blueGray-50 border border-blueGray-100 sm:flex p-4 rounded transition duration-500 hover:shadow-lg"
+              className="activity-box border border-blueGray-100 sm:flex p-4 rounded transition duration-500 hover:shadow-lg aos-init aos-animate"
               data-aos="fade-up"
             >
               <div className="flex-shrink-0	activity-image relative rounded">
@@ -319,7 +319,7 @@ const CreatorActivity = () => {
               </div>
             </div>
             <div
-              className="activity-box bg-green-50 border border-green-100 sm:flex p-4 rounded transition duration-500 hover:shadow-lg"
+              className="activity-box border border-blueGray-100 sm:flex p-4 rounded transition duration-500 hover:shadow-lg aos-init aos-animate"
               data-aos="fade-up"
             >
               <div className="flex-shrink-0	activity-image relative rounded">
@@ -370,7 +370,7 @@ const CreatorActivity = () => {
               </div>
             </div>
             <div
-              className="activity-box bg-green-50 border border-green-100 sm:flex p-4 rounded transition duration-500 hover:shadow-lg"
+              className="activity-box border border-blueGray-100 sm:flex p-4 rounded transition duration-500 hover:shadow-lg aos-init aos-animate"
               data-aos="fade-up"
             >
               <div className="flex-shrink-0	activity-image relative rounded">
@@ -421,7 +421,7 @@ const CreatorActivity = () => {
               </div>
             </div>
             <div
-              className="activity-box bg-indigo-50 border border-indigo-100 sm:flex p-4 rounded transition duration-500 hover:shadow-lg"
+              className="activity-box border border-blueGray-100 sm:flex p-4 rounded transition duration-500 hover:shadow-lg aos-init aos-animate"
               data-aos="fade-up"
             >
               <div className="flex-shrink-0	activity-image relative rounded">
@@ -466,7 +466,7 @@ const CreatorActivity = () => {
               </div>
             </div>
             <div
-              className="activity-box bg-indigo-50 border border-indigo-100 sm:flex p-4 rounded transition duration-500 hover:shadow-lg"
+              className="activity-box border border-blueGray-100 sm:flex p-4 rounded transition duration-500 hover:shadow-lg aos-init aos-animate"
               data-aos="fade-up"
             >
               <div className="flex-shrink-0	activity-image relative rounded">
@@ -511,7 +511,7 @@ const CreatorActivity = () => {
               </div>
             </div>
             <div
-              className="activity-box bg-red-50 border border-red-100 sm:flex p-4 rounded transition duration-500 hover:shadow-lg"
+              className="activity-box border border-blueGray-100 sm:flex p-4 rounded transition duration-500 hover:shadow-lg aos-init aos-animate"
               data-aos="fade-up"
             >
               <div className="flex-shrink-0	activity-image relative rounded">
@@ -555,7 +555,7 @@ const CreatorActivity = () => {
               </div>
             </div>
             <div
-              className="activity-box bg-red-50 border border-red-100 sm:flex p-4 rounded transition duration-500 hover:shadow-lg"
+              className="activity-box border border-blueGray-100 sm:flex p-4 rounded transition duration-500 hover:shadow-lg aos-init aos-animate"
               data-aos="fade-up"
             >
               <div className="flex-shrink-0	activity-image relative rounded">
