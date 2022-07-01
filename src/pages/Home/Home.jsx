@@ -24,7 +24,7 @@ const Home = () => {
               <div className="flex flex-wrap items-center justify-center">
                 <Link
                   to="/explore"
-                  className="btn block text-white font-body font-bold rounded py-4 px-7 mx-3 mt-4 transition-all duration-500 bg-gradient-to-tl from-indigo-500 via-purple-500 to-indigo-500 bg-size-200 bg-pos-0 hover:bg-pos-100"
+                  className="btn block text-blueGray-900 font-body font-bold rounded py-4 px-7 mx-3 mt-4 transition-all duration-500 bg-gradient-to-tl from-indigo-500 via-purple-500 to-indigo-500 bg-size-200 bg-pos-0 hover:bg-pos-100"
                 >
                   Explore Now
                 </Link>

@@ -31,7 +31,11 @@ const Dropdown = ({ dropdown, active, setactive }) => {
               {listitem.title}
               {listitem.submenu.length > 0 && (
                 <span
-                  onClick={() => setactiveItem(activeItem==listitem.id ? null : listitem.id)}
+                  onClick={() =>
+                    setactiveItem(
+                      activeItem == listitem.id ? null : listitem.id
+                    )
+                  }
                   className="leading-5 text-2xl text-center bg-blueGray-100 w-6 h-6 absolute right-2 top-4 block lg:hidden toggle"
                 >
                   {activeItem !== listitem.id ? "+" : "-"}
@@ -59,7 +63,9 @@ const Dropdown = ({ dropdown, active, setactive }) => {
                     {subitem.submenu.length > 0 && (
                       <span
                         onClick={() =>
-                          setactiveSubItem(activeSubItem==subitem.id ? null : subitem.id)
+                          setactiveSubItem(
+                            activeSubItem == subitem.id ? null : subitem.id
+                          )
                         }
                         className="leading-5 text-2xl text-center bg-blueGray-100 w-6 h-6 absolute right-2 top-4 block lg:hidden toggle"
                       >
@@ -102,7 +108,7 @@ const Dropdown = ({ dropdown, active, setactive }) => {
       </form>
       <Link
         to="/wallet"
-        className="btn hidden xl:flex items-center text-white font-body font-semibold rounded h-14 p-4 transition-all duration-500 bg-gradient-to-tl from-indigo-500 via-purple-500 to-indigo-500 bg-size-200 bg-pos-0 hover:bg-pos-100"
+        className="btn hidden xl:flex items-center text-blueGray-900 font-body font-semibold rounded h-14 p-4 transition-all duration-500 bg-gradient-to-tl from-indigo-500 via-purple-500 to-indigo-500 bg-size-200 bg-pos-0 hover:bg-pos-100"
         type="submit"
       >
         <img
