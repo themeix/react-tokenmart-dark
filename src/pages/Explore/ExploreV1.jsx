@@ -98,7 +98,7 @@ const ExploreV1 = () => {
             ))}
           </div>
           <div className="flex justify-center mt-8 lg:mt-14">
-            <button className="btn load-more-btn flex items-center text-white font-body font-bold rounded px-6 py-4 transition-all duration-500 bg-gradient-to-tl from-indigo-500 via-purple-500 to-indigo-500 bg-size-200 bg-pos-0 hover:bg-pos-100">
+            <button className="btn load-more-btn flex items-center text-blueGray-900 font-body font-bold rounded px-6 py-4 transition-all duration-500 bg-gradient-to-tl from-indigo-500 via-purple-500 to-indigo-500 bg-size-200 bg-pos-0 hover:bg-pos-100">
               Load More{" "}
               <img
                 className="w-4 h-4 flex-shrink-0 animate-spin ml-2"
