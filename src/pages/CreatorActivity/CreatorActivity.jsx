@@ -3,6 +3,7 @@ import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom";
 import FooterV2 from "../../components/Footer/FooterV2";
 import HeaderV2 from "../../components/Header/HeaderV2";
+import LoadMore from "../../components/LoadMore";
 
 const CreatorActivity = () => {
   return (
@@ -108,19 +109,19 @@ const CreatorActivity = () => {
           <div className="flex flex-wrap items-center justify-center mb-8 lg:mb-14">
             <Link
               to="/creator-featured"
-              className="block border border-blueGray-300 text-blueGray-900 hover:text-white font-body font-bold rounded py-3 px-6 mr-4 mb-4 transition duration-500 hover:bg-indigo-500 hover:border-indigo-500"
+              className="block border border-blueGray-300 text-blueGray-900 hover:text-blueGray-900 font-body font-bold rounded py-3 px-6 mr-4 mb-4 transition duration-500 hover:bg-indigo-500 hover:border-indigo-500"
             >
               Featured (4)
             </Link>
             <Link
               to="/creator-published"
-              className="block border border-blueGray-300 text-blueGray-900 hover:text-white font-body font-bold rounded py-3 px-6 mr-4 mb-4 transition duration-500 hover:bg-indigo-500 hover:border-indigo-500"
+              className="block border border-blueGray-300 text-blueGray-900 hover:text-blueGray-900 font-body font-bold rounded py-3 px-6 mr-4 mb-4 transition duration-500 hover:bg-indigo-500 hover:border-indigo-500"
             >
               Published (10)
             </Link>
             <Link
               to="/creator-published"
-              className="block border border-blueGray-300 text-blueGray-900 hover:text-white font-body font-bold rounded py-3 px-6 mr-4 mb-4 transition duration-500 hover:bg-indigo-500 hover:border-indigo-500"
+              className="block border border-blueGray-300 text-blueGray-900 hover:text-blueGray-900 font-body font-bold rounded py-3 px-6 mr-4 mb-4 transition duration-500 hover:bg-indigo-500 hover:border-indigo-500"
             >
               Pending (12)
             </Link>
@@ -132,19 +133,19 @@ const CreatorActivity = () => {
             </Link>
             <Link
               to="/creator-follower"
-              className="block border border-blueGray-300 text-blueGray-900 hover:text-white font-body font-bold rounded py-3 px-6 mr-4 mb-4 transition duration-500 hover:bg-indigo-500 hover:border-indigo-500"
+              className="block border border-blueGray-300 text-blueGray-900 hover:text-blueGray-900 font-body font-bold rounded py-3 px-6 mr-4 mb-4 transition duration-500 hover:bg-indigo-500 hover:border-indigo-500"
             >
               Followers(6)
             </Link>
             <Link
               to="/edit-profile"
-              className="block border border-blueGray-300 text-blueGray-900 hover:text-white font-body font-bold rounded py-3 px-6 mr-4 mb-4 transition duration-500 hover:bg-indigo-500 hover:border-indigo-500"
+              className="block border border-blueGray-300 text-blueGray-900 hover:text-blueGray-900 font-body font-bold rounded py-3 px-6 mr-4 mb-4 transition duration-500 hover:bg-indigo-500 hover:border-indigo-500"
             >
               Edit Profile
             </Link>
             <Link
               to="/#"
-              className="block border border-blueGray-300 text-blueGray-900 hover:text-white font-body font-bold rounded py-3 px-6 mr-4 mb-4 transition duration-500 hover:bg-indigo-500 hover:border-indigo-500"
+              className="block border border-blueGray-300 text-blueGray-900 hover:text-blueGray-900 font-body font-bold rounded py-3 px-6 mr-4 mb-4 transition duration-500 hover:bg-indigo-500 hover:border-indigo-500"
             >
               Logout
             </Link>
@@ -606,14 +607,7 @@ const CreatorActivity = () => {
             </div>
           </div>
           <div className="flex justify-center mt-8 lg:mt-14">
-            <button className="btn load-more-btn flex items-center text-white font-body font-bold rounded px-6 py-4 transition-all duration-500 bg-gradient-to-tl from-indigo-500 via-purple-500 to-indigo-500 bg-size-200 bg-pos-0 hover:bg-pos-100">
-              Load More{" "}
-              <img
-                className="w-4 h-4 flex-shrink-0 animate-spin ml-2"
-                src="assets/images/spinner-icon.svg"
-                alt="title"
-              />
-            </button>
+            <LoadMore/>
           </div>
         </div>
       </section>

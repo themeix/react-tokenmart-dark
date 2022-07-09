@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const BlogCard = ({ item }) => {
   return (
     <div
-      className="blog-box flex justify-between flex-col rounded transition duration-500 hover:shadow-lg"
+      className="bg-blueGray-100 blog-box flex justify-between flex-col rounded transition duration-500 hover:shadow-lg aos-init aos-animate"
       data-aos="fade-up"
     >
       <div className="content-top">

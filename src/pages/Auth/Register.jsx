@@ -20,11 +20,11 @@ const Register = () => {
         <form action="#">
           <div className="mb-4">
             <label className="block font-body text-blueGray-600 mb-4" htmlFor="Username2">Username or Email Address *</label> 
-            <input className="border border-blueGray-300 rounded w-full px-4 py-3 font-body text-blueGray-600 placeholder-blueGray-600 transition duration-500 focus:shadow-lg focus:border-indigo-500 focus:outline-none" id="Username2" type="text" />
+            <input className="border border-blueGray-300 rounded w-full px-4 py-3 font-body text-blueGray-900 placeholder-blueGray-900 bg-blueGray-100 transition duration-500 focus:shadow-lg focus:border-indigo-500 focus:outline-none" id="Username2" type="text" />
           </div>
           <div className="mb-4">
             <label className="block font-body text-blueGray-600 mb-4" htmlFor="Password2">Password *</label> 
-            <input className="border border-blueGray-300 rounded w-full px-4 py-3 font-body text-blueGray-600 placeholder-blueGray-600 transition duration-500 focus:shadow-lg focus:border-indigo-500 focus:outline-none" id="Password2" type="password" />
+            <input className="border border-blueGray-300 rounded w-full px-4 py-3 font-body text-blueGray-900 placeholder-blueGray-900 bg-blueGray-100 transition duration-500 focus:shadow-lg focus:border-indigo-500 focus:outline-none" id="Password2" type="password" />
           </div>
           <div className="mb-6">
             <div className="flex items-center cursor-pointer mr-4 my-2"> 
@@ -32,7 +32,7 @@ const Register = () => {
               <label className="block font-body text-blueGray-600" htmlFor="checkbox2">I have read and agree to the website <a className="text-indigo-500 transition duration-500 underline-hover" href="term-condition">terms and conditions</a> *</label>
             </div>
           </div>
-          <button type="submit" className="btn inline-block text-white font-body font-medium rounded py-3 px-6 transition-all duration-500 bg-gradient-to-tl from-indigo-500 via-purple-500 to-indigo-500 bg-size-200 bg-pos-0 hover:bg-pos-100">Register <img className="w-4 h-4 inline-block ml-2 mb-1" src="assets/images/check-white-icon.svg" alt="title" /></button>
+          <button type="submit" className="btn inline-block text-blueGray-900 font-body font-medium rounded py-3 px-6 transition-all duration-500 bg-gradient-to-tl from-indigo-500 via-purple-500 to-indigo-500 bg-size-200 bg-pos-0 hover:bg-pos-100">Register <img className="w-4 h-4 inline-block ml-2 mb-1" src="assets/images/check-white-icon.svg" alt="title" /></button>
         </form>
       </div>
     </div>

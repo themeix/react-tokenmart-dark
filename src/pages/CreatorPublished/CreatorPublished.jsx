@@ -1,12 +1,15 @@
 import React from "react";
+import { useState } from "react";
 import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom";
 import FooterV2 from "../../components/Footer/FooterV2";
 import HeaderV2 from "../../components/Header/HeaderV2";
+import LoadMore from "../../components/LoadMore";
 import { products } from "../Explore/itemdata";
 import ProductItem from "../Explore/ProductItem";
 
 const CreatorPublished = () => {
+  const [num, setnum] = useState(8);
   return (
     <div>
        <Helmet>
@@ -152,7 +155,7 @@ const CreatorPublished = () => {
             </Link>
           </div>
           <div className="product-infinite grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
-            {products.map((item, index) => (
+            {products.slice(0,num).map((item, index) => (
               <ProductItem key={index} item={item} />
             ))}
         
@@ -165,14 +168,9 @@ const CreatorPublished = () => {
          
           </div>
           <div className="flex justify-center mt-8 lg:mt-14">
-            <button className="btn load-more-btn flex items-center text-white font-body font-bold rounded px-6 py-4 transition-all duration-500 bg-gradient-to-tl from-indigo-500 via-purple-500 to-indigo-500 bg-size-200 bg-pos-0 hover:bg-pos-100">
-              Load More{" "}
-              <img
-                className="w-4 h-4 flex-shrink-0 animate-spin ml-2"
-                src="assets/images/spinner-icon.svg"
-                alt="title"
-              />
-            </button>
+            {num === 8 && <LoadMore onClick={()=>setnum(14)} />}
+          
+      
           </div>
         </div>
       </section>

@@ -1,17 +1,19 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { useRef } from "react";
 import { Link } from "react-router-dom";
-import Footer from "../../components/Footer/Footer";
+import FooterV2 from "../../components/Footer/FooterV2";
 import Header from "../../components/Header/Header";
 import ExploreTabs from "./ExploreTabs";
 import { products } from "./itemdata";
 import ProductItem from "./ProductItem";
 import $ from "jquery";
 import { Helmet } from "react-helmet";
+import LoadMore from "../../components/LoadMore";
 window.jQuery = window.$ = $;
 require("jquery-nice-select");
 
 const ExploreV1 = () => {
+  const [num, setnum] = useState(12);
   const selectRef = useRef();
   const selectRef2 = useRef();
 
@@ -98,25 +100,18 @@ const ExploreV1 = () => {
             </div>
           </div>
           <div className="product-infinite grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
-            {products.map((product, index) => (
+            {products.slice(0, num).map((product, index) => (
               <ProductItem key={index} item={product} />
             ))}
           </div>
           <div className="flex justify-center mt-8 lg:mt-14">
-            <button className="btn load-more-btn flex items-center text-blueGray-900 font-body font-bold rounded px-6 py-4 transition-all duration-500 bg-gradient-to-tl from-indigo-500 via-purple-500 to-indigo-500 bg-size-200 bg-pos-0 hover:bg-pos-100">
-              Load More{" "}
-              <img
-                className="w-4 h-4 flex-shrink-0 animate-spin ml-2"
-                src="assets/images/spinner-icon.svg"
-                alt="title"
-              />
-            </button>
+            {num == 12 && <LoadMore onClick={() => setnum(18)} />}
           </div>
         </div>
       </section>
       {/*  ====================== Footer Section =============================  */}
 
-      <Footer />
+      <FooterV2 />
     </div>
   );
 };

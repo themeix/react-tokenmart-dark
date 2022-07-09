@@ -67,7 +67,7 @@ const CreateItem = () => {
                     Title
                   </label>
                   <input
-                    className="border border-blueGray-300 rounded w-full px-4 py-3 font-body text-blueGray-600 placeholder-blueGray-600 transition duration-500 focus:shadow-lg focus:border-indigo-500 focus:outline-none"
+                    className="border border-blueGray-300 rounded w-full px-4 py-3 font-body text-blueGray-900 placeholder-blueGray-900 bg-blueGray-100 transition duration-500 focus:shadow-lg focus:border-indigo-500 focus:outline-none"
                     id="Title"
                     type="text"
                     placeholder="eg: Cybar Boss & Mega Boss #3 "
@@ -82,7 +82,7 @@ const CreateItem = () => {
                   </label>
                   <textarea
                     rows={4}
-                    className="border border-blueGray-300 rounded w-full px-4 py-3 font-body text-blueGray-600 placeholder-blueGray-600 transition duration-500 focus:shadow-lg focus:border-indigo-500 focus:outline-none"
+                    className="border border-blueGray-300 rounded w-full px-4 py-3 font-body text-blueGray-900 placeholder-blueGray-900 bg-blueGray-100 transition duration-500 focus:shadow-lg focus:border-indigo-500 focus:outline-none"
                     id="Description"
                     placeholder="eg: Cybar Boss & Mega Boss #3 "
                     defaultValue={""}
@@ -130,13 +130,13 @@ const CreateItem = () => {
                   </label>
                   <div className="relative">
                     <input
-                      className="border border-blueGray-300 rounded w-full px-4 py-3 font-body text-blueGray-600 placeholder-blueGray-600 transition duration-500 focus:shadow-lg focus:border-indigo-500 focus:outline-none"
+                      className="border border-blueGray-300 rounded w-full px-4 py-3 font-body text-blueGray-900 placeholder-blueGray-900 bg-blueGray-100 transition duration-500 focus:shadow-lg focus:border-indigo-500 focus:outline-none"
                       id="Price"
                       type="text"
                       placeholder="Enter Your Price"
                     />
                     <select
-                      className="font-body text-blueGray-600 absolute bottom-3 right-2"
+                      className="font-body text-blueGray-600 absolute bottom-3 right-2 bg-blueGray-50"
                       name="Price"
                     >
                       <option value={1}>ETH</option>
@@ -153,7 +153,7 @@ const CreateItem = () => {
                     Offer Price
                   </label>
                   <input
-                    className="border border-blueGray-300 rounded w-full px-4 py-3 font-body text-blueGray-600 placeholder-blueGray-600 transition duration-500 focus:shadow-lg focus:border-indigo-500 focus:outline-none"
+                    className="border border-blueGray-300 rounded w-full px-4 py-3 font-body text-blueGray-900 placeholder-blueGray-900 bg-blueGray-100 transition duration-500 focus:shadow-lg focus:border-indigo-500 focus:outline-none"
                     id="Offer"
                     type="text"
                     placeholder="Suggested 0, 10%, 20% 30% Maximum is 70% "
@@ -205,7 +205,7 @@ const CreateItem = () => {
                 </div>
                 <button
                   type="submit"
-                  className="btn inline-block text-white font-body font-medium rounded py-3 px-6 transition-all duration-500 bg-gradient-to-tl from-indigo-500 via-purple-500 to-indigo-500 bg-size-200 bg-pos-0 hover:bg-pos-100"
+                  className="btn inline-block text-blueGray-900 font-body font-medium rounded py-3 px-6 transition-all duration-500 bg-gradient-to-tl from-indigo-500 via-purple-500 to-indigo-500 bg-size-200 bg-pos-0 hover:bg-pos-100"
                 >
                   Create Item{" "}
                   <img

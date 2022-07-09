@@ -235,19 +235,19 @@ const BlogDetails = () => {
                   </h4>
                   <Link
                     to="/tag"
-                    className="btn block text-white font-body rounded py-2 px-4 mr-2 my-1 transition-all duration-500 bg-gradient-to-tl from-indigo-500 via-purple-500 to-indigo-500 bg-size-200 bg-pos-0 hover:bg-pos-100"
+                    className="btn block text-blueGray-900 font-body rounded py-2 px-4 mr-2 my-1 transition-all duration-500 bg-gradient-to-tl from-indigo-500 via-purple-500 to-indigo-500 bg-size-200 bg-pos-0 hover:bg-pos-100"
                   >
                     Auction
                   </Link>
                   <Link
                     to="/tag"
-                    className="btn block text-white font-body rounded py-2 px-4 mr-2 my-1 transition-all duration-500 bg-gradient-to-tl from-indigo-500 via-purple-500 to-indigo-500 bg-size-200 bg-pos-0 hover:bg-pos-100"
+                    className="btn block text-blueGray-900 font-body rounded py-2 px-4 mr-2 my-1 transition-all duration-500 bg-gradient-to-tl from-indigo-500 via-purple-500 to-indigo-500 bg-size-200 bg-pos-0 hover:bg-pos-100"
                   >
                     Creator
                   </Link>
                   <Link
                     to="/tag"
-                    className="btn block text-white font-body rounded py-2 px-4 mr-2 my-1 transition-all duration-500 bg-gradient-to-tl from-indigo-500 via-purple-500 to-indigo-500 bg-size-200 bg-pos-0 hover:bg-pos-100"
+                    className="btn block text-blueGray-900 font-body rounded py-2 px-4 mr-2 my-1 transition-all duration-500 bg-gradient-to-tl from-indigo-500 via-purple-500 to-indigo-500 bg-size-200 bg-pos-0 hover:bg-pos-100"
                   >
                     Marketplace
                   </Link>
@@ -501,21 +501,21 @@ const BlogDetails = () => {
               >
                 <div className="col-span-1 mb-4">
                   <input
-                    className="border border-blueGray-300 rounded w-full px-4 py-3 font-body text-blueGray-600 placeholder-blueGray-600 transition duration-500 focus:shadow-lg focus:border-indigo-500 focus:outline-none"
+                    className="border border-blueGray-300 rounded w-full px-4 py-3 font-body text-blueGray-900 placeholder-blueGray-900 bg-blueGray-100 transition duration-500 focus:shadow-lg focus:border-indigo-500 focus:outline-none"
                     type="text"
                     placeholder="Name..."
                   />
                 </div>
                 <div className="col-span-1 mb-4">
                   <input
-                    className="border border-blueGray-300 rounded w-full px-4 py-3 font-body text-blueGray-600 placeholder-blueGray-600 transition duration-500 focus:shadow-lg focus:border-indigo-500 focus:outline-none"
+                    className="border border-blueGray-300 rounded w-full px-4 py-3 font-body text-blueGray-900 placeholder-blueGray-900 bg-blueGray-100 transition duration-500 focus:shadow-lg focus:border-indigo-500 focus:outline-none"
                     type="text"
                     placeholder="Email"
                   />
                 </div>
                 <div className="col-span-2 mb-4">
                   <input
-                    className="border border-blueGray-300 rounded w-full px-4 py-3 font-body text-blueGray-600 placeholder-blueGray-600 transition duration-500 focus:shadow-lg focus:border-indigo-500 focus:outline-none"
+                    className="border border-blueGray-300 rounded w-full px-4 py-3 font-body text-blueGray-900 placeholder-blueGray-900 bg-blueGray-100 transition duration-500 focus:shadow-lg focus:border-indigo-500 focus:outline-none"
                     type="text"
                     placeholder="Subject"
                   />
@@ -523,7 +523,7 @@ const BlogDetails = () => {
                 <div className="col-span-2 mb-4">
                   <textarea
                     rows={4}
-                    className="border border-blueGray-300 rounded w-full px-4 py-3 font-body text-blueGray-600 placeholder-blueGray-600 transition duration-500 focus:shadow-lg focus:border-indigo-500 focus:outline-none"
+                    className="border border-blueGray-300 rounded w-full px-4 py-3 font-body text-blueGray-900 placeholder-blueGray-900 bg-blueGray-100 transition duration-500 focus:shadow-lg focus:border-indigo-500 focus:outline-none"
                     placeholder="Comment"
                     defaultValue={""}
                   />
@@ -531,7 +531,7 @@ const BlogDetails = () => {
                 <div>
                   <button
                     type="submit"
-                    className="btn inline-block text-white font-body font-medium rounded py-3 px-6 transition-all duration-500 bg-gradient-to-tl from-indigo-500 via-purple-500 to-indigo-500 bg-size-200 bg-pos-0 hover:bg-pos-100"
+                    className="btn inline-block text-blueGray-900 font-body font-medium rounded py-3 px-6 transition-all duration-500 bg-gradient-to-tl from-indigo-500 via-purple-500 to-indigo-500 bg-size-200 bg-pos-0 hover:bg-pos-100"
                   >
                     Add Comment
                   </button>
@@ -547,9 +547,9 @@ const BlogDetails = () => {
                   Search{" "}
                 </h3>
                 <form action="#">
-                  <div className="relative">
+                  <div className="relative ">
                     <input
-                      className="border border-blueGray-300 rounded w-full px-4 py-3 pr-10 font-body text-blueGray-600 placeholder-blueGray-600 transition duration-500 focus:shadow-lg focus:border-indigo-500 focus:outline-none"
+                      className="border border-blueGray-300 rounded w-full px-4 py-3 font-body text-blueGray-900 placeholder-blueGray-900 bg-blueGray-100 transition duration-500 focus:shadow-lg focus:border-indigo-500 focus:outline-none"
                       type="text"
                       placeholder="Serch here..."
                     />

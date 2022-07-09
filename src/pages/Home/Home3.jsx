@@ -32,7 +32,7 @@ const Home3 = () => {
             <div className="flex flex-wrap items-center justify-center">
               <Link
                 to="/explore"
-                className="btn block text-white font-body font-bold rounded py-4 px-7 mx-3 mt-4 transition-all duration-500 bg-gradient-to-tl from-indigo-500 via-purple-500 to-indigo-500 bg-size-200 bg-pos-0 hover:bg-pos-100"
+                className="btn block text-blueGray-900 font-body font-bold rounded py-4 px-7 mx-3 mt-4 transition-all duration-500 bg-gradient-to-tl from-indigo-500 via-purple-500 to-indigo-500 bg-size-200 bg-pos-0 hover:bg-pos-100"
               >
                 Explore Now
               </Link>
@@ -199,7 +199,7 @@ const Home3 = () => {
         </div>
       </section>
       {/*  ====================== Product Section =============================  */}
-      <section className="product-section relative py-20 lg:py-32 bg-indigo-50">
+      <section className="product-section relative py-20 lg:py-32 bg-blueGray-100">
         <div className="container mx-auto relative px-4 z-10">
           <div className="section-title relative flex flex-wrap items-center justify-between border-b border-blueGray-300 pb-6 mb-8 lg:mb-14">
             <div>
@@ -327,7 +327,7 @@ const Home3 = () => {
             </Link>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
-          {blogs.map((blog, index) => (
+          {blogs.slice(0,4).map((blog, index) => (
             <BlogCard item={blog} key={index} />
           ))}
           </div>

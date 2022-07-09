@@ -1820,7 +1820,7 @@ video {
 
 .hover\:bg-indigo-500:hover {
 	--tw-bg-opacity: 1;
-	background-color: rgba(99, 102, 241, var(--tw-bg-opacity));
+	background-color: rgba(99, 102, 241, var(--tw-bg-opacity))!important;
 }
 
 .hover\:bg-white:hover {

@@ -1,7 +1,14 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
 const FooterV2 = () => {
+  const [yOffset, setyOffset] = useState(0);
+
+  useEffect(() => {
+    window.addEventListener("scroll", () => {
+      setyOffset(window.pageYOffset);
+    });
+  }, []);
   return (
     <footer className="footer-section overflow-hidden">
       <div className="relative footer-shape2 py-20 lg:py-32">
@@ -194,8 +201,9 @@ const FooterV2 = () => {
         </p>
       </div>
       <Link
+      onClick={()=>window.scrollTo(0,0)}
         to="/#"
-        className="footer-back w-10 h-10  fixed bottom-8 right-8 z-50 bg-blueGray-600 rounded-lg items-center justify-center"
+        className={`${!yOffset > 1000 && "hidden"} hidden footer-back w-10 h-10  flex fixed bottom-8 right-8 z-50 bg-blueGray-600 rounded-lg items-center justify-center`}
       >
         <svg
           width={18}

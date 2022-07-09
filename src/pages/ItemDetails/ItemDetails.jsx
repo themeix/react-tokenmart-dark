@@ -4,6 +4,7 @@ import FooterV2 from "../../components/Footer/FooterV2";
 import Header from "../../components/Header/Header";
 import PlaceBidModal from "../../components/Modal/PlaceBidModal";
 import Tabs from "./Tabs";
+import Timer9 from '../../components/Timer/Timer9'
 
 const ItemDetails = () => {
   const [modalOpen, setmodalOpen] = useState(false);
@@ -72,7 +73,7 @@ const ItemDetails = () => {
                 data-aos="fade-up"
               >
                 Auctions ends in{" "}
-                <span className="font-display countdown-time9 text-blueGray-900 font-bold" />
+               <Timer9/>
               </p>
               <div
                 className="border border-blueGray-300 rounded p-6"

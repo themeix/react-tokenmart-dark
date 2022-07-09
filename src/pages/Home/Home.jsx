@@ -34,7 +34,7 @@ const Home = () => {
                 </Link>
                 <Link
                   to="/create-item"
-                  className="btn block bg-blueGray-900 text-white font-body font-bold rounded py-4 px-7 mx-3 mt-4 transition duration-500 hover:bg-indigo-500"
+                  className="btn block bg-blueGray-900 text-white hover:text-blueGray-900 font-body font-bold rounded py-4 px-7 mx-3 mt-4 transition duration-500 hover:bg-indigo-500"
                 >
                   Create Product
                 </Link>
