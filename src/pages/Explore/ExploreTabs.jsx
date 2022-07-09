@@ -12,37 +12,37 @@ const ExploreTabs = () => {
       </Link>
       <Link
         to="/explore"
-        className="block border border-blueGray-300 text-blueGray-900 hover:text-white font-body font-bold rounded py-3 px-6 mr-4 mb-4 transition duration-500 hover:bg-indigo-500 hover:border-indigo-500"
+        className="block border border-blueGray-300 text-blueGray-900 hover:text-blueGray-900 font-body font-bold rounded py-3 px-6 mr-4 mb-4 transition duration-500 hover:bg-indigo-500 hover:border-indigo-500"
       >
         Art
       </Link>
       <Link
         to="/explore"
-        className="block border border-blueGray-300 text-blueGray-900 hover:text-white font-body font-bold rounded py-3 px-6 mr-4 mb-4 transition duration-500 hover:bg-indigo-500 hover:border-indigo-500"
+        className="block border border-blueGray-300 text-blueGray-900 hover:text-blueGray-900 font-body font-bold rounded py-3 px-6 mr-4 mb-4 transition duration-500 hover:bg-indigo-500 hover:border-indigo-500"
       >
         Music
       </Link>
       <Link
         to="/explore"
-        className="block border border-blueGray-300 text-blueGray-900 hover:text-white font-body font-bold rounded py-3 px-6 mr-4 mb-4 transition duration-500 hover:bg-indigo-500 hover:border-indigo-500"
+        className="block border border-blueGray-300 text-blueGray-900 hover:text-blueGray-900 font-body font-bold rounded py-3 px-6 mr-4 mb-4 transition duration-500 hover:bg-indigo-500 hover:border-indigo-500"
       >
         Domain Names
       </Link>
       <Link
         to="/explore"
-        className="block border border-blueGray-300 text-blueGray-900 hover:text-white font-body font-bold rounded py-3 px-6 mr-4 mb-4 transition duration-500 hover:bg-indigo-500 hover:border-indigo-500"
+        className="block border border-blueGray-300 text-blueGray-900 hover:text-blueGray-900 font-body font-bold rounded py-3 px-6 mr-4 mb-4 transition duration-500 hover:bg-indigo-500 hover:border-indigo-500"
       >
         Virtual Worlds
       </Link>
       <Link
         to="/explore"
-        className="block border border-blueGray-300 text-blueGray-900 hover:text-white font-body font-bold rounded py-3 px-6 mr-4 mb-4 transition duration-500 hover:bg-indigo-500 hover:border-indigo-500"
+        className="block border border-blueGray-300 text-blueGray-900 hover:text-blueGray-900 font-body font-bold rounded py-3 px-6 mr-4 mb-4 transition duration-500 hover:bg-indigo-500 hover:border-indigo-500"
       >
         Trading Cards
       </Link>
       <Link
         to="/explore"
-        className="block border border-blueGray-300 text-blueGray-900 hover:text-white font-body font-bold rounded py-3 px-6 mr-4 mb-4 transition duration-500 hover:bg-indigo-500 hover:border-indigo-500"
+        className="block border border-blueGray-300 text-blueGray-900 hover:text-blueGray-900 font-body font-bold rounded py-3 px-6 mr-4 mb-4 transition duration-500 hover:bg-indigo-500 hover:border-indigo-500"
       >
         Trading Cards
       </Link>

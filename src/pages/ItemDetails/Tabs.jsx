@@ -346,12 +346,11 @@ const Tabs = ({  }) => {
 
   return (
     <>
-      {" "}
       <nav className="tabs-nav">
         <ul className="flex items-center">
           <li
             className={`font-display text-blueGray-900 font-bold mb-2 mr-4 lg:mr-8 ${
-              activeTab == 0 ? "active" : " "
+              activeTab === 0 ? "active" : " "
             }`}
             onClick={() => setactiveTab(0)}
           >
@@ -359,7 +358,7 @@ const Tabs = ({  }) => {
           </li>
           <li
             className={`font-display text-blueGray-900 font-bold mb-2 mr-4 lg:mr-8 ${
-              activeTab == 1 ? "active" : " "
+              activeTab === 1 ? "active" : " "
             }`}
             onClick={() => setactiveTab(1)}
           >
@@ -367,15 +366,15 @@ const Tabs = ({  }) => {
           </li>
           <li
             className={`font-display text-blueGray-900 font-bold mb-2 mr-4 lg:mr-8 ${
-              activeTab == 2 ? "active" : " "
+              activeTab === 2 ? "active" : " "
             }`}
             onClick={() => setactiveTab(2)}
           >
             <a >Additional Info</a>
           </li>
         </ul>
-      </nav>{" "}
-      <div className="tabs-content">{TabItem()}</div>{" "}
+      </nav>
+      <div className="tabs-content">{TabItem()}</div>
     </>
   );
 };

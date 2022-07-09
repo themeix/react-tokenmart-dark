@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { Link } from "react-router-dom";
 import { list } from "./list";
 
@@ -114,7 +114,7 @@ const HeaderV2 = () => {
                   <li>
                     <p className="py-1 px-2 font-display font-semibold text-blueGray-600 hover:bg-indigo-100 hover:text-indigo-500 transition duration-500">
                       S. Robert
-                    </p>{" "}
+                    </p>
                     <span className="py-2 px-2 flex items-center justify-between break-all font-body text-blueGray-600 hover:bg-indigo-100 hover:text-indigo-500 transition duration-500">
                       1xd071cd262bcd34
                       <img

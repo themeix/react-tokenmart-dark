@@ -34,7 +34,7 @@ import Intro from "./pages/Intro/Intro";
 function App() {
   return (
     <div className="App">
-      {/* <Pointer/> */}
+      <Pointer/>
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Home />} />

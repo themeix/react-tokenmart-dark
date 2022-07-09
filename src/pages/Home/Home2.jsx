@@ -1,19 +1,21 @@
 import React from "react";
+import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom";
-import Footer from "../../components/Footer/Footer";
 import FooterV2 from "../../components/Footer/FooterV2";
 import Header from "../../components/Header/Header";
 import { products } from "../Explore/itemdata";
-import ProductItem from "../Explore/ProductItem";
 import ProductItem2 from "../Explore/ProductItem2";
 import VerticalProduct from "../Explore/VerticalProduct";
 import FeaturedAuctions from "./FeaturedAuctions";
-import ProductSlider from "./ProductSlider";
 import SwiperSlider from "./SwiperSlider";
 
 const Home2 = () => {
   return (
     <div>
+       <Helmet>
+        <meta charSet="utf-8" />
+        <title>Home 2 || Tokenmart - Largest online marketplace</title>
+      </Helmet>
       <Header />
       {/*  ====================== Hero Section =============================  */}
 

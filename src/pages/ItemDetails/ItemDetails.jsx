@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { Helmet } from "react-helmet";
 import FooterV2 from "../../components/Footer/FooterV2";
 import Header from "../../components/Header/Header";
-import ConnectWalletModal from "../../components/Modal/ConnectWalletModal";
 import PlaceBidModal from "../../components/Modal/PlaceBidModal";
 import Tabs from "./Tabs";
 

@@ -17,7 +17,7 @@ const Intro = () => {
           </div>
           <div className="grid lg:grid-cols-2 lg:gap-32 gap-10">
             <div className="flex-col transform  hover:-translate-y-2 transition duration-500">
-              <a href="#">
+              <a href="/">
                 <img
                   className="mb-6 lg:w-96 w-full "
                   src="assets/images/light.png"
@@ -33,7 +33,7 @@ const Intro = () => {
               </a>
             </div>
             <div className="flex-col transform  hover:-translate-y-2 transition duration-500">
-              <a href="#">
+              <a href="/">
                 <img
                   className="mb-6 lg:w-96 w-full"
                   src="assets/images/light.png"

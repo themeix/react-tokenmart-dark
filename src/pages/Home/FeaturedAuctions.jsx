@@ -5,7 +5,6 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 import { Pagination, Navigation, Autoplay } from "swiper";
 import { Link } from "react-router-dom";
-import ProductItem from "../Explore/ProductItem";
 import ProductItem2 from "../Explore/ProductItem2";
 const FeaturedAuctions = ({products}) => {
   return (

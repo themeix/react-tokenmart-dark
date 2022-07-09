@@ -1,25 +1,8 @@
 import React from "react";
 import { AiOutlineClose } from "react-icons/ai";
-import ReactModal from "react-modal";
 import { OuterClick } from "react-outer-click";
 
 const ByenowModal = ({ modalOpen, setmodalOpen }) => {
-  const customStyles = {
-    content: {
-      top: "50%",
-      left: "50%",
-      right: "auto",
-      bottom: "auto",
-      marginRight: "-50%",
-      transform: "translate(-50%, -50%)",
-      padding: "0",
-      width: "auto",
-      height: "max-content",
-      borderRadius: "10px",
-      backgroundColor: "white",
-    },
-  };
-  console.log(modalOpen);
   return (
     <>
       {modalOpen && (
@@ -35,10 +18,15 @@ const ByenowModal = ({ modalOpen, setmodalOpen }) => {
               style={{ height: "max-content" }}
               className="max-w-xl m-auto zoom bg-white rounded shadow   p-10    fixed inset-0 z-50 "
             >
-               <AiOutlineClose
+              <AiOutlineClose
                 onClick={() => setmodalOpen(false)}
                 size={24}
-                style={{ position: "absolute", top: "20px", right: "20px",cursor:"pointer" }}
+                style={{
+                  position: "absolute",
+                  top: "20px",
+                  right: "20px",
+                  cursor: "pointer",
+                }}
               />
               <img
                 className="w-14 h-14 block m-auto mb-4"

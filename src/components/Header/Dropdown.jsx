@@ -1,9 +1,8 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { Link } from "react-router-dom";
 import { list } from "./list";
 
 const Dropdown = ({ dropdown, active, setactive }) => {
-  const [hidden, sethidden] = useState(dropdown);
   const [activeItem, setactiveItem] = useState(null);
   const [activeSubItem, setactiveSubItem] = useState(null);
 
