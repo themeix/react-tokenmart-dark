@@ -14,7 +14,7 @@ const ProductItem = ({ item }) => {
             src={item.img}
             alt="title"
           />
-          <span className="flex items-center absolute top-4 right-4 text-sm bg-gradient-to-r from-purple-500 to-indigo-500 text-white font-body font-medium rounded py-1 px-2">
+          <span className="flex items-center absolute top-4 right-4 text-sm bg-gradient-to-r from-purple-500 to-indigo-500 text-blueGray-900 font-body font-medium rounded py-1 px-2">
             <img
               className="w-3 h-3 inline-block mr-1"
               src="assets/images/star-icon.svg"
@@ -25,7 +25,7 @@ const ProductItem = ({ item }) => {
         </div>
         <Link
           to="/item-single"
-          className="product-meta absolute left-0 right-0 m-auto bottom-24 w-36 block text-white text-center font-body font-medium rounded py-2 px-4 transition-all duration-500 bg-gradient-to-tl from-indigo-500 via-purple-500 to-indigo-500 bg-size-200 bg-pos-0 hover:bg-pos-100"
+          className="product-meta absolute left-0 right-0 m-auto bottom-24 w-36 block text-blueGray-900 text-center font-body font-medium rounded py-2 px-4 transition-all duration-500 bg-gradient-to-tl from-indigo-500 via-purple-500 to-indigo-500 bg-size-200 bg-pos-0 hover:bg-pos-100"
         >
           <img
             className="w-4 h-4 inline-block mb-1"

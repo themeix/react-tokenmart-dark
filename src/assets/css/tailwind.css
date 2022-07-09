@@ -1343,7 +1343,7 @@ video {
 
 .bg-indigo-500 {
 	--tw-bg-opacity: 1;
-	background-color: rgba(99, 102, 241, var(--tw-bg-opacity));
+	background-color: rgba(99, 102, 241, var(--tw-bg-opacity))!important;
 }
 
 .bg-purple-100 {
@@ -1398,7 +1398,7 @@ video {
 
 .bg-blueGray-900 {
 	--tw-bg-opacity: 1;
-	background-color: rgba(248, 250, 252, var(--tw-bg-opacity));
+	background-color: rgba(248, 250, 252, var(--tw-bg-opacity))!important;
 }
 
 .bg-gradient-to-tl {

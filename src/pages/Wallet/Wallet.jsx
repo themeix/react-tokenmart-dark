@@ -8,15 +8,20 @@ import WalletItem from "./WalletItem";
 import Modal from "react-modal/lib/components/Modal";
 import ConnectWalletModal from "../../components/Modal/ConnectWalletModal";
 import { wallets } from "./walletdata";
+import { Helmet } from "react-helmet";
 
 const Wallet = () => {
   const [modalOpen, setmodalOpen] = useState(false);
 
-  console.log(modalOpen)
+
 
 
   return (
     <div>
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>Wallet|| Tokenmart - Largest online marketplace</title>
+      </Helmet>
       <Header />
       {/*  ====================== Hero Section =============================  */}
       <section className="hero-section relative mt-2 pt-32 pb-20 lg:pt-48 lg:pb-32">

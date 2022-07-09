@@ -14,9 +14,7 @@ const Header = () => {
       }
     });
 
-    return () => {
-      // window.removeEventListener(listener);
-    };
+   
   }, []);
 
   return (
@@ -29,7 +27,7 @@ const Header = () => {
           <Link to="/" className="flex items-center flex-shrink-0 mr-6">
             <img
               className="h-10"
-              src="assets/images/header-logo.svg"
+              src="assets/images/logo.png"
               alt="title"
             />
           </Link>

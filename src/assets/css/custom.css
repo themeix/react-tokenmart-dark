@@ -700,6 +700,8 @@ section:hover .swiper-button-next {
   font-size: 16px;
   line-height: inherit;
   font-family: "Open Sans", sans-serif;
+  background-color: inherit!important;
+  color: #fff;
 }
 
 .nice-select .list {

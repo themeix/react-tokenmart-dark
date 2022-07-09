@@ -6,23 +6,27 @@ import Header from "../../components/Header/Header";
 import ExploreTabs from "./ExploreTabs";
 import { products } from "./itemdata";
 import ProductItem from "./ProductItem";
-
+import $ from "jquery";
+import { Helmet } from "react-helmet";
+window.jQuery = window.$ = $;
 require("jquery-nice-select");
+
 const ExploreV1 = () => {
   const selectRef = useRef();
-  const [reload, setreload] = useState(false);
+  const selectRef2 = useRef();
 
   useEffect(() => {
-    if (window.location.search !== "?reloaded") {
-      console.log(window.location.search )
-      window.location.reload();
-      window.location.search = "reloaded";
-    }
+    $(selectRef.current).niceSelect();
+    $(selectRef2.current).niceSelect();
   }, []);
 
   return (
     <div>
       <Header />
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>Explore V1 || Tokenmart - Largest online marketplace</title>
+      </Helmet>
       {/*  ====================== Hero Section =============================  */}
       <section className="hero-section relative mt-2 pt-32 pb-20 lg:pt-48 lg:pb-32">
         <div className="container mx-auto relative px-4 z-10">
@@ -79,11 +83,12 @@ const ExploreV1 = () => {
                 <option>Domain Names </option>
                 <option>Virtual Worlds </option>
               </select>
+
               <ExploreTabs />
             </div>
             <div className="flex relative lg:top-4">
               <span className="font-body text-blueGray-600">Token</span>
-              <select className="multiple-select text-blue">
+              <select ref={selectRef2} className="multiple-select text-blue">
                 <option>All Token </option>
                 <option>Bitcoin </option>
                 <option>Doge Coin </option>

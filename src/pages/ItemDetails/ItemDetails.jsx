@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Helmet } from "react-helmet";
 import FooterV2 from "../../components/Footer/FooterV2";
 import Header from "../../components/Header/Header";
 import ConnectWalletModal from "../../components/Modal/ConnectWalletModal";
@@ -10,6 +11,10 @@ const ItemDetails = () => {
 
   return (
     <div>
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>Product Details || Tokenmart - Largest online marketplace</title>
+      </Helmet>
       <Header />
       {/*  ====================== Hero Section =============================  */}
       <section className="hero-section relative mt-2 pt-32 pb-20 lg:pt-48 lg:pb-32">
@@ -150,7 +155,7 @@ const ItemDetails = () => {
               <button
                 onClick={() => setmodalOpen(true)}
                 href=""
-                className="popup-modal btn inline-block text-xl text-white font-body font-medium rounded py-3 px-8 mb-10 transition-all duration-500 bg-gradient-to-tl from-indigo-500 via-purple-500 to-indigo-500 bg-size-200 bg-pos-0 hover:bg-pos-100"
+                className="popup-modal btn inline-block text-xl text-blueGray-900 font-body font-medium rounded py-3 px-8 mb-10 transition-all duration-500 bg-gradient-to-tl from-indigo-500 via-purple-500 to-indigo-500 bg-size-200 bg-pos-0 hover:bg-pos-100"
               >
                 <img
                   className="w-5 h-5 inline-block mb-1"
