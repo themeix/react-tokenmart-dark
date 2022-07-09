@@ -6,7 +6,7 @@ import Header from "../../components/Header/Header";
 import BlogCard from "../Blog/BlogCard";
 import { blogs } from "../Blog/blogdata";
 import { products } from "../Explore/itemdata";
-import ProductItem from "../Explore/ProductItem";
+import ProductItem2 from "../Explore/ProductItem2";
 
 const Home = () => {
   const [blogcount, setblogcount] = useState(3);
@@ -222,7 +222,7 @@ const Home = () => {
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
               {products.map((product, index) => (
-                <ProductItem key={index} item={product} />
+                <ProductItem2 key={index} item={product} />
               ))}
             </div>
           </div>

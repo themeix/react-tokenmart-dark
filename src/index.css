@@ -87,3 +87,6 @@ body {
   background-color: #0f172a;
   border-color: rgba(30,41,59,var(--tw-border-opacity))!important;
 }
+.arrow-btn{
+  padding-right: 2.8em!important;
+}

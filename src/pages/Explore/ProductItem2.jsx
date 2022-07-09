@@ -106,7 +106,7 @@ const ProductItem2 = ({item}) => {
       <div className="text-center">
         <Link
           to="/item-single"
-          className="border-gradient block bg-gradient-to-r text-indigo-500 font-body font-semibold rounded py-2 px-4 hover:text-white hover:from-indigo-500 hover:to-purple-500 mb-2"
+          className="border-gradient block bg-gradient-to-r text-indigo-500 font-body font-semibold rounded py-2 px-4 hover:text-blueGray-900  hover:from-indigo-500 hover:to-purple-500 mb-2 transition duration-500"
         >
           <img
             className="w-4 h-4 inline-block mb-1"
