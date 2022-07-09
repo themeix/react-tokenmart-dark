@@ -14,16 +14,17 @@ const PlaceBidModal = ({ modalIsOpen, afterOpenModal, setmodalOpen }) => {
               setmodalOpen(false);
             }}
           >
-            <AiOutlineClose
-              onClick={() => setmodalOpen(false)}
-              size={24}
-              style={{ position: "absolute", top: "20px", right: "20px" }}
-            />
+            
             <form
               style={{ height: "max-content" }}
               id="popup-modal"
               className="max-w-xl m-auto bg-white rounded shadow  p-10 zoom fixed inset-0 z-50"
             >
+              <AiOutlineClose
+              onClick={() => setmodalOpen(false)}
+              size={24}
+              style={{ position: "absolute", top: "20px", right: "20px" }}
+            />
               <h3 className="font-display text-2xl text-blueGray-900 font-bold mb-10 text-center">
                 Your Bid
               </h3>

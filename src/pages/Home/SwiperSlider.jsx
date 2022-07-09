@@ -110,7 +110,7 @@ const SwiperSlider = () => {
                   <div className="mt-8">
                     <Link
                       to="/item-single"
-                      className="btn inline-block text-2xl text-white font-body font-semibold rounded py-3 px-6 mr-6 mt-4 transition-all duration-500 bg-gradient-to-tl from-indigo-500 via-purple-500 to-indigo-500 bg-size-200 bg-pos-0 hover:bg-pos-100"
+                      className="btn inline-block text-2xl text-blueGray-900 font-body font-semibold rounded py-3 px-6 mr-6 mt-4 transition-all duration-500 bg-gradient-to-tl from-indigo-500 via-purple-500 to-indigo-500 bg-size-200 bg-pos-0 hover:bg-pos-100"
                     >
                       <img
                         className="w-5 h-5 inline-block mb-1"
@@ -192,7 +192,7 @@ const SwiperSlider = () => {
                   <div className="mt-8">
                     <Link
                       to="/item-single"
-                      className="btn inline-block text-2xl text-white font-body font-semibold rounded py-3 px-6 mr-6 mt-4 transition-all duration-500 bg-gradient-to-tl from-indigo-500 via-purple-500 to-indigo-500 bg-size-200 bg-pos-0 hover:bg-pos-100"
+                      className="btn inline-block text-2xl text-blueGray-900 font-body font-semibold rounded py-3 px-6 mr-6 mt-4 transition-all duration-500 bg-gradient-to-tl from-indigo-500 via-purple-500 to-indigo-500 bg-size-200 bg-pos-0 hover:bg-pos-100"
                     >
                       <img
                         className="w-5 h-5 inline-block mb-1"

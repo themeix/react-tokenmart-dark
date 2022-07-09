@@ -30,7 +30,7 @@ const ConnectWalletModal = ({ modalOpen, setmodalOpen }) => {
               />
               <Link
                 to="#popup-modal"
-                className="popup-modal w-full btn block bg-gradient-to-r from-purple-500 to-indigo-500 text-white text-center font-body font-medium rounded py-3 px-6 transition duration-500 hover:from-indigo-500 hover:to-purple"
+                className="popup-modal w-full btn block bg-gradient-to-r from-purple-500 to-indigo-500 text-white text-center font-body font-medium rounded py-3 px-6 transition duration-500 hover:to-indigo-500 hover:to-purple-500"
               >
                 Download Now
               </Link>
