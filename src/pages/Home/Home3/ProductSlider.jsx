@@ -5,7 +5,7 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 import { Pagination, Navigation, Autoplay } from "swiper";
 import { Link } from "react-router-dom";
-import { products } from "../Explore/itemdata";
+import { products } from "../../Explore/itemdata";
 
 const ProductSlider = ({items,component}) => {
   return (

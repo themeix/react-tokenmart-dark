@@ -5,7 +5,7 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 import { Pagination, Navigation, Autoplay } from "swiper";
 import { Link } from "react-router-dom";
-import ProductItem2 from "../Explore/ProductItem2";
+import ProductItem2 from "../../Explore/ProductItem2";
 const FeaturedAuctions = ({products}) => {
   return (
     <section className="product-section relative mt-20 mb-16 lg:mt-32 lg:mb-24">

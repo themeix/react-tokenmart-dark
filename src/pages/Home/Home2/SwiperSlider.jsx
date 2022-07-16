@@ -5,7 +5,7 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import { Pagination, Navigation, Autoplay } from "swiper";
-import Timer7 from "../../components/Timer/Timer7";
+import Timer7 from "../../../components/Timer/Timer7";
 const SwiperSlider = () => {
   return (
     <section className="hero-section relative pt-32 pb-28 lg:pt-32 lg:pb-20">

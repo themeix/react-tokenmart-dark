@@ -240,9 +240,11 @@ const Footer = () => {
         </div>
       </div>
       <Link
-       onClick={()=>window.scrollTo(0,0)}
+        onClick={() => window.scrollTo(0, 0)}
         to="/"
-        className={`${!yOffset > 1000 && "hidden"} hidden footer-back w-10 h-10  flex fixed bottom-8 right-8 z-50 bg-blueGray-600 rounded-lg items-center justify-center`}
+        className={`${
+          !yOffset > 1000 && "hidden"
+        } hidden footer-back w-10 h-10  flex fixed bottom-8 right-8 z-50 bg-blueGray-600 rounded-lg items-center justify-center`}
       >
         <svg
           width={18}
