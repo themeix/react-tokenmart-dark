@@ -58,6 +58,7 @@ function App() {
           <Route path="/forget-password" element={<ForgetPassword />} />
 
           <Route path="/single" element={<BlogDetails />} />
+          <Route path="/:id" element={<BlogDetails />} />
           <Route path="/category" element={<BlogCategory />} />
           <Route path="/tag" element={<BlogTag />} />
           <Route path="/blog" element={<BlogGrid />} />
