@@ -29,7 +29,6 @@ const AuctionSlider = () => {
               speed={1000}
               zoom={true}
               watchOverflow={true}
-              autoplayDisableOnInteraction={false}
               paginationClickable={true}
               keyboardControl={true}
               mousewheelControl={true}
@@ -55,8 +54,7 @@ const AuctionSlider = () => {
               }}
             >
               {products.map((product, index) => (
-                <SwiperSlide>
-                  {" "}
+                <SwiperSlide key={index}>
                   <ProductItem3 key={index} item={product} />{" "}
                 </SwiperSlide>
               ))}

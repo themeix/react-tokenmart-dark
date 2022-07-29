@@ -40,8 +40,7 @@ const FeaturedAuctions = ({products}) => {
               speed={1000}
               zoom={true}
               watchOverflow={true}
-              autoplayDisableOnInteraction={false}
-              paginationClickable={true}
+              paginationclickable={true}
               keyboardControl={true}
               mousewheelControl={true}
               autoplay={true}
@@ -66,7 +65,7 @@ const FeaturedAuctions = ({products}) => {
               }}
             >
               {products.map((product, index) => (
-                <SwiperSlide>
+                <SwiperSlide key={index} >
                   <ProductItem2 key={index} item={product} />{" "}
                 </SwiperSlide>
               ))}

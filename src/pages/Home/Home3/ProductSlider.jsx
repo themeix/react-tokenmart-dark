@@ -18,7 +18,6 @@ const ProductSlider = ({items,component}) => {
           speed={1000}
           zoom={true}
           watchOverflow={true}
-          autoplayDisableOnInteraction={false}
           paginationClickable={true}
           keyboardControl={true}
           mousewheelControl={true}
