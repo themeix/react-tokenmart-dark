@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import { list } from "./list";
 
-const Dropdown = ({ dropdown, active, setactive }) => {
+const Dropdown = ({ active }) => {
   const [activeItem, setactiveItem] = useState(null);
   const [activeSubItem, setactiveSubItem] = useState(null);
 
@@ -16,8 +16,8 @@ const Dropdown = ({ dropdown, active, setactive }) => {
         {list.map((listitem, index) => (
           <li
             // style={{display:activeItem==li}}
-            className={`relative dropdown  lg:mr-4 ${
-              activeItem == listitem.id && "active"
+            className={`relative dropdown lg:mr-4 ${
+              activeItem === listitem.id && "active"
             }`}
             key={index}
           >
@@ -29,26 +29,30 @@ const Dropdown = ({ dropdown, active, setactive }) => {
             >
               {listitem.title}
               {listitem.submenu.length > 0 && (
-                <span
-                  onClick={() =>
-                    setactiveItem(
-                      activeItem == listitem.id ? null : listitem.id
-                    )
-                  }
-                  className="leading-5 text-2xl text-center bg-blueGray-100 w-6 h-6 absolute right-2 top-4 block lg:hidden toggle"
-                >
-                  {activeItem !== listitem.id ? "+" : "-"}
-                </span>
+                <a>
+                  <span
+                    onClick={() =>
+                      setactiveItem(
+                        activeItem === listitem.id ? null : listitem.id
+                      )
+                    }
+                    className="leading-5 text-2xl text-center bg-blueGray-100 w-6 h-6 absolute right-2 top-4 block lg:hidden toggle"
+                  >
+                    {activeItem !== listitem.id ? "+" : "-"}
+                  </span>
+                </a>
               )}
             </Link>
             <ul
-              className={` lg:block bg-white lg:absolute top-full lg:shadow lg:w-44 transition duration-500 submenu `}
+              className={` ${
+                activeItem === listitem.id ? "" : "hidden"
+              }  lg:block bg-white lg:absolute top-full lg:shadow lg:w-44 transition duration-500 submenu `}
             >
               {listitem.submenu.map((subitem, index) => (
                 <li
                   key={index}
                   className={`relative dropdown  ${
-                    activeSubItem == subitem.id && "active"
+                    activeSubItem === subitem.id && "active"
                   }`}
                 >
                   <Link
@@ -63,7 +67,7 @@ const Dropdown = ({ dropdown, active, setactive }) => {
                       <span
                         onClick={() =>
                           setactiveSubItem(
-                            activeSubItem == subitem.id ? null : subitem.id
+                            activeSubItem === subitem.id ? null : subitem.id
                           )
                         }
                         className="leading-5 text-2xl text-center bg-blueGray-100 w-6 h-6 absolute right-2 top-4 block lg:hidden toggle"
@@ -72,11 +76,14 @@ const Dropdown = ({ dropdown, active, setactive }) => {
                       </span>
                     )}
                   </Link>
-                  <ul className="hidden lg:block bg-white lg:absolute top-0 left-full lg:shadow lg:w-44 transition duration-500 submenu">
+                  <ul
+                    className={`${
+                      activeSubItem === subitem.id ? "" : "hidden"
+                    } lg:block bg-white lg:absolute top-0 left-full lg:shadow lg:w-44 transition duration-500 submenu`}
+                  >
                     {subitem.submenu.map((superSubItem, index) => (
-                      <li>
+                      <li key={index}>
                         <Link
-                          key={index}
                           className="py-3 px-4 flex items-center hover:bg-indigo-100 hover:text-indigo-500 transition duration-500"
                           to={superSubItem.link}
                         >
@@ -102,12 +109,13 @@ const Dropdown = ({ dropdown, active, setactive }) => {
             className="appearance-none bg-transparent border-none w-full text-blueGray-600 mr-3 py-1 px-2 leading-tight focus:outline-none"
             type="text"
             placeholder="Search items"
+            style={{ zIndex: -1 }}
           />
         </div>
       </form>
       <Link
         to="/wallet"
-        className="btn hidden xl:flex items-center text-blueGray-900 font-body font-semibold rounded h-14 p-4 transition-all duration-500 bg-gradient-to-tl from-indigo-500 via-purple-500 to-indigo-500 bg-size-200 bg-pos-0 hover:bg-pos-100"
+        className="btn hidden xl:flex items-center text-white font-body font-semibold rounded h-14 p-4 transition-all duration-500 bg-gradient-to-tl from-indigo-500 via-purple-500 to-indigo-500 bg-size-200 bg-pos-0 hover:bg-pos-100"
         type="submit"
       >
         <img

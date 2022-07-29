@@ -4,7 +4,7 @@ import FooterV2 from "../../components/Footer/FooterV2";
 import Header from "../../components/Header/Header";
 import PlaceBidModal from "../../components/Modal/PlaceBidModal";
 import Tabs from "./Tabs";
-import Timer9 from '../../components/Timer/Timer9'
+import Timer9 from "../../components/Timer/Timer9";
 
 const ItemDetails = () => {
   const [modalOpen, setmodalOpen] = useState(false);
@@ -72,8 +72,7 @@ const ItemDetails = () => {
                 className="font-body text-blueGray-600 mb-10"
                 data-aos="fade-up"
               >
-                Auctions ends in{" "}
-               <Timer9/>
+                Auctions ends in <Timer9 />
               </p>
               <div
                 className="border border-blueGray-300 rounded p-6"
@@ -154,7 +153,6 @@ const ItemDetails = () => {
               </div>
               <button
                 onClick={() => setmodalOpen(true)}
-                href=""
                 className="popup-modal btn inline-block text-xl text-blueGray-900 font-body font-medium rounded py-3 px-8 mb-10 transition-all duration-500 bg-gradient-to-tl from-indigo-500 via-purple-500 to-indigo-500 bg-size-200 bg-pos-0 hover:bg-pos-100"
               >
                 <img
