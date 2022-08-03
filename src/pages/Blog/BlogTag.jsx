@@ -1,6 +1,7 @@
 import React from "react";
 import { useState } from "react";
-import { Helmet } from "react-helmet";
+import { Helmet } from "react-helmet-async";
+
 import FooterV2 from "../../components/Footer/FooterV2";
 import Header from "../../components/Header/Header";
 import LoadMore from "../../components/LoadMore";

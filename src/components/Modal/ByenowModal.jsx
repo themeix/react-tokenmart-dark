@@ -1,20 +1,17 @@
 import React from "react";
 import { AiOutlineClose } from "react-icons/ai";
-import { Modal } from "react-responsive-modal";
-import "react-responsive-modal/styles.css";
+import HyperModal from "react-hyper-modal";
+
 const ByenowModal = ({ modalOpen, setmodalOpen }) => {
   return (
-    <Modal
-      open={modalOpen}
-      onClose={() => setmodalOpen(false)}
-      classNames={{
-        modalAnimationIn: "zoomIn",
-      }}
-      animationDuration={800}
+    <HyperModal
+      isOpen={modalOpen}
+      requestClose={() => setmodalOpen(false)}
+      classes="modal zoomIn"
     >
       <div
         style={{ height: "max-content" }}
-        className="max-w-xl m-auto  zoom bg-white rounded shadow   p-10    fixed inset-0 z-50  "
+        className="max-w-xl m-auto zoom bg-white rounded shadow   p-10    fixed inset-0 z-50  "
       >
         <AiOutlineClose
           onClick={() => setmodalOpen(false)}
@@ -67,7 +64,7 @@ const ByenowModal = ({ modalOpen, setmodalOpen }) => {
           </button>
         </div>
       </div>
-    </Modal>
+    </HyperModal>
   );
 };
 

@@ -6,7 +6,7 @@ import "swiper/css/navigation";
 import { Pagination, Navigation, Autoplay } from "swiper";
 import { Link } from "react-router-dom";
 import ProductItem2 from "../../Explore/ProductItem2";
-const FeaturedAuctions = ({products}) => {
+const FeaturedAuctions = ({ products }) => {
   return (
     <section className="product-section relative mt-20 mb-16 lg:mt-32 lg:mb-24">
       <div className="container mx-auto relative px-4 z-10">
@@ -40,9 +40,6 @@ const FeaturedAuctions = ({products}) => {
               speed={1000}
               zoom={true}
               watchOverflow={true}
-              paginationclickable={true}
-              keyboardControl={true}
-              mousewheelControl={true}
               autoplay={true}
               navigation={{
                 nextEl: ".swiper-button-next",
@@ -65,7 +62,7 @@ const FeaturedAuctions = ({products}) => {
               }}
             >
               {products.map((product, index) => (
-                <SwiperSlide key={index} >
+                <SwiperSlide key={index}>
                   <ProductItem2 key={index} item={product} />{" "}
                 </SwiperSlide>
               ))}

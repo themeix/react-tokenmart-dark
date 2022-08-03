@@ -2,7 +2,6 @@
 import "./App.css";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Home from "./pages/Home/Home";
-
 import Home2 from "./pages/Home/Home2";
 import Home3 from "./pages/Home/Home3";
 import ExploreV1 from "./pages/Explore/ExploreV1";
@@ -36,6 +35,7 @@ import { useEffect } from "react";
 function App() {
   useEffect(() => {
     console.clear();
+    console.log = function () {};
   }, []);
   return (
     <div className="App">

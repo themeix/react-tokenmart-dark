@@ -4,7 +4,7 @@ import FooterV2 from "../../components/Footer/FooterV2";
 import Header from "../../components/Header/Header";
 import BlogCard from "./BlogCard";
 import { blogs } from "./blogdata";
-import {Helmet} from 'react-helmet'
+import { Helmet } from "react-helmet-async";
 
 const BlogGrid = () => {
   const [num, setnum] = useState(9);

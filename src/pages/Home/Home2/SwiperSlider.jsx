@@ -16,9 +16,6 @@ const SwiperSlider = () => {
             speed={1000}
             zoom={true}
             watchOverflow={true}
-            paginationClickable={true}
-            keyboardControl={true}
-            mousewheelControl={true}
             autoplay={true}
             navigation={{
               nextEl: ".swiper-button-next",
