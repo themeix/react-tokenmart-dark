@@ -1,18 +1,18 @@
 import { AiOutlineClose } from "react-icons/ai";
-import HyperModal from "react-hyper-modal";
+import Popup from "reactjs-popup";
 
 const PlaceBidModal = ({ modalIsOpen, setmodalOpen }) => {
   return (
     <>
-      <HyperModal
-        isOpen={modalIsOpen}
-        requestClose={() => setmodalOpen(false)}
-        classes="zoomIn"
+      <Popup
+        open={modalIsOpen}
+        closeOnDocumentClick
+        onClose={() => setmodalOpen(false)}
       >
         <form
           style={{ height: "max-content" }}
           id="popup-modal"
-          className="max-w-xl m-auto bg-white rounded shadow  p-10 zoom fixed inset-0 z-50"
+          className="max-w-xl bg-white m-auto bg-white rounded shadow   p-10  zoom   fixed inset-0 z-50  modal"
         >
           <AiOutlineClose
             onClick={() => setmodalOpen(false)}
@@ -92,7 +92,7 @@ const PlaceBidModal = ({ modalIsOpen, setmodalOpen }) => {
             Placed a bid
           </button>
         </form>
-      </HyperModal>
+      </Popup>
     </>
   );
 };

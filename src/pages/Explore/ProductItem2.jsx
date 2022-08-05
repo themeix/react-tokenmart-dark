@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import Timer2 from '../../components/Timer/Timer2'
+import slugify from 'slugify'
 
 const ProductItem2 = ({item}) => {
   return (
@@ -25,7 +26,7 @@ const ProductItem2 = ({item}) => {
           <div>
             {" "}
             <h3 className="font-display text-xl text-blueGray-900 font-bold transition hover:text-indigo-500">
-              <Link to="/item-single">{item.name} </Link>
+              <Link to={`/item-single?${slugify(item.name)}`}>{item.name} </Link>
             </h3>
           </div>
           <span className="font-body text-blueGray-600 flex items-center flex-shrink-0 ml-4">
@@ -105,7 +106,7 @@ const ProductItem2 = ({item}) => {
       </div>
       <div className="text-center">
         <Link
-          to="/item-single"
+     to={`/item-single?${slugify(item.name)}`}
           className="border-gradient block bg-gradient-to-r text-indigo-500 font-body font-semibold rounded py-2 px-4 hover:text-blueGray-900  hover:from-indigo-500 hover:to-purple-500 mb-2 transition duration-500"
         >
           <img

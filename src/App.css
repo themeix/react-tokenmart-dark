@@ -20,6 +20,9 @@
   height: max-content !important;
   animation: zoomIn 0.3s ease-in-out !important;
 }
+.popup-overlay {
+  background: rgba(0, 0, 0, 0.733);
+}
 
 @keyframes zoomIn {
   0% {

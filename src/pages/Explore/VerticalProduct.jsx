@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import slugify from "slugify";
 
 const VerticalProduct = ({ item }) => {
   return (
@@ -58,7 +59,7 @@ const VerticalProduct = ({ item }) => {
         </div>
         <div>
           <h3 className="font-display text-xl text-blueGray-900 font-bold transition hover:text-indigo-500">
-            <Link to="/item-single2">{item.name} </Link>
+            <Link to={`/item-single2?${slugify(item.name)}`}>{item.name} </Link>
           </h3>
         </div>
         <div className="mt-4">
